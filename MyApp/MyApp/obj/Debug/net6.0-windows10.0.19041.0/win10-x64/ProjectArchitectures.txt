@@ -1,0 +1,1 @@
+C:\Users\claud\OneDrive\Bureau\MyApp\MyApp\MyApp.csproj;x64
