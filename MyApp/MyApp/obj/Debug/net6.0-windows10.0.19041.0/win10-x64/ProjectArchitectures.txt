@@ -1,1 +1,1 @@
-C:\Users\claud\OneDrive\Bureau\MyApp\MyApp\MyApp.csproj;x64
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyApp\MyApp\MyApp.csproj;x64

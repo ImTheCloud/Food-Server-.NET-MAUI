@@ -25118,11 +25118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\claud\\OneDrive\\Bureau\\MyApp\\MyApp\\MyApp.csproj",
+      "projectUniqueName": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyApp\\MyApp\\MyApp.csproj",
       "projectName": "MyApp",
-      "projectPath": "C:\\Users\\claud\\OneDrive\\Bureau\\MyApp\\MyApp\\MyApp.csproj",
+      "projectPath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyApp\\MyApp\\MyApp.csproj",
       "packagesPath": "C:\\Users\\claud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\claud\\OneDrive\\Bureau\\MyApp\\MyApp\\obj\\",
+      "outputPath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyApp\\MyApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
