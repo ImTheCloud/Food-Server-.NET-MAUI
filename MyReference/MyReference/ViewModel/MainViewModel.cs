@@ -8,6 +8,9 @@ public partial class MainViewModel : BaseViewModel
 
 
     DeviceOrientationServices MyDeviceOrientationService;
+
+    [ObservableProperty]
+    public string monCode;
     public MainViewModel()
     {
         this.MyDeviceOrientationService = new DeviceOrientationServices();
@@ -26,6 +29,12 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     async Task MonkeysFromJSON()
     {
+
+        if (Globals.SerialBuffer.Count != 0)Globals.SerialBuffer.Dequeue();
+        GetFromJsonServices myServices = new();
+        
+        
+
         if (IsBusy) return;
 
         MonkeyService MyService = new MonkeyService();

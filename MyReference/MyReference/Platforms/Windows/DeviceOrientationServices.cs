@@ -36,7 +36,7 @@ namespace MyReference.Services
                 catch (Exception ex)
                 {
                     Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
-                    throw;
+                    
                 }
 
 

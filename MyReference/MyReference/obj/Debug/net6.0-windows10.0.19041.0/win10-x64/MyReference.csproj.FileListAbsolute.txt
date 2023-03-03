@@ -390,6 +390,7 @@ C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\My
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\System.IO.Ports.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll
@@ -693,6 +694,7 @@ C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\My
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pepsi.scale-100.png
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.AssemblyInfoInputs.cache
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.AssemblyInfo.cs
@@ -720,4 +722,3 @@ C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\My
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\System.IO.Ports.dll

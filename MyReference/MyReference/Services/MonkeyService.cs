@@ -1,3 +1,8 @@
+using MongoDB.Bson.IO;
+using System.Collections;
+using System.Text.Json.Serialization;
+using Windows.ApplicationModel;
+
 namespace MyReference.Services;
 
 public class MonkeyService : ContentPage
@@ -15,7 +20,9 @@ public class MonkeyService : ContentPage
         using var reader = new StreamReader(stream);
         var contents = await reader.ReadToEndAsync();
         monkeys = JsonSerializer.Deserialize<List<Monkey>>(contents);
-
-        return monkeys;
+        var resultlist = JsonConvert.DeserializeObject<Package[]>(contents);
+        ArrayList monkeyslist = new ArrayList();
+        monkeyslist.Add(resultlist.code);
+        return monkeyslist;
     }
 }
