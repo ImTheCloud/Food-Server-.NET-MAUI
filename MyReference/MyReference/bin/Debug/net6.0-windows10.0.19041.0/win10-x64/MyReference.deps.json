@@ -13,6 +13,7 @@
           "Microsoft.Maui.Dependencies": "6.0.548",
           "Microsoft.Maui.Extensions": "6.0.548",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
+          "System.IO.Ports": "8.0.0-preview.1.23110.8",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.13",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "6.0.548",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "6.0.548",
@@ -1111,9 +1112,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.11008"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
@@ -1262,12 +1288,61 @@
       "path": "microsoft.windowsappsdk/1.1.3",
       "hashPath": "microsoft.windowsappsdk.1.1.3.nupkg.sha512"
     },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ARNqp/wjgAnon91yOIC1Lmf1u26pkUX6mtuSlbxXeGa9BGTfHJdfQ+bkAj4LtoGWfT2qd8CmMRTh6vk0sKUzRg==",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0pox/icXi2Q0HIux7VvnMb0qDnzFppxliBZ1YCqbqC5zgeH+vFvRwv/eiNbbdCJKtMNcYl5bvvvXBm7LeV7C5A==",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FzPC71lkvhQ1iIt6CtpBvGkpPN6aCB/tkNUYeQ62BTX6Q8pti1wcd3n/lr0aJ1X0JfXUjO6g5VHyJ/Xc9ai3Jg==",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yHN2WydLZ9wwsrRajTUXrQ0I1ucXlF92k3vLdp9eNvcWpWa8xUR4GIezRQP1Yp7F5qQEhYPtI9U7cX8wmxAOpw==",
+      "path": "runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e+J8NEwJmMP/1QwE4ki0QWs3LphaFTwn0U6TMhaMzgcYg6wqFnEzTkhr0aVR7mqfPGjvHmw59aQd3xR19/wqJQ==",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.osx-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yG2lzTYeGbff4QpPZ8XxYVdjmIULuhYCdNC0N/dnAC/borjA9J3sKqAerzQKPoZQmZXSRDSpyu4lBOgKosMJ+g==",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
       "path": "system.diagnostics.diagnosticsource/6.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512"
+    },
+    "System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k5q8nbCf/MB0ucgpWHCCTO7Hm3htuGb8ASVT0qD7lPVyl6pCIgfjHw7L9462MjlO7+7sC5WFLLGKFjiLX+w7yQ==",
+      "path": "system.io.ports/8.0.0-preview.1.23110.8",
+      "hashPath": "system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

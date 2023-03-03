@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "buQMtqS943aWks2TQY4jAknEtA5SQCuDw1j3kPF1fbnObg2C73JBTOr6ufuOqJd/5BRCoKAzb8ZeRvi8OllxIg==",
+  "dgSpecHash": "lR3PLxtJZDeTcAllCzPzIQbPrbUYZ6R6G7+5nQ9VxDWIrYpUZ9IdxdBpxd/5hMNWTa8UCGr5wN10dnY+x/q4iQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,14 @@
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.3\\microsoft.windowsappsdk.1.1.3.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.osx-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.osx-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\system.io.ports\\8.0.0-preview.1.23110.8\\system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\xamarin.android.glide\\4.12.0.8\\xamarin.android.glide.4.12.0.8.nupkg.sha512",

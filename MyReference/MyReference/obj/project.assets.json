@@ -211,6 +211,61 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -228,6 +283,35 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -2171,6 +2255,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -2188,6 +2300,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -4131,6 +4262,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -4148,6 +4307,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -6091,6 +6269,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -6108,6 +6314,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -8051,6 +8276,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -8068,6 +8318,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -10011,6 +10280,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -10028,6 +10322,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -11971,6 +12284,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -11988,6 +12326,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -13931,6 +14288,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -13948,6 +14330,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -15869,6 +16270,61 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -15886,6 +16342,35 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -16101,6 +16586,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16118,6 +16631,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -16333,6 +16865,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16350,6 +16910,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -16565,6 +17144,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16582,6 +17189,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -16797,6 +17423,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16814,6 +17465,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -17029,6 +17699,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17046,6 +17741,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -17261,6 +17975,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17278,6 +18017,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -17493,6 +18251,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17510,6 +18293,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -17725,6 +18527,61 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17742,6 +18599,35 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -17957,6 +18843,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17974,6 +18888,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -18189,6 +19122,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18206,6 +19167,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -18421,6 +19401,34 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18438,6 +19446,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -18653,6 +19680,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18670,6 +19722,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -18885,6 +19956,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18902,6 +19998,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -19117,6 +20232,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19134,6 +20274,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -19349,6 +20508,31 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19366,6 +20550,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -19714,6 +20917,61 @@
           }
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19731,6 +20989,35 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -20043,6 +21330,34 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -20060,6 +21375,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -20372,6 +21706,34 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -20389,6 +21751,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -20701,6 +22082,34 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -20718,6 +22127,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -21030,6 +22458,31 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21047,6 +22500,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -21359,6 +22831,31 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21376,6 +22873,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -21688,6 +23204,31 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21705,6 +23246,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -22023,6 +23583,31 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package"
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -22040,6 +23625,25 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0-preview.1.23110.8": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -23164,6 +24768,101 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "ARNqp/wjgAnon91yOIC1Lmf1u26pkUX6mtuSlbxXeGa9BGTfHJdfQ+bkAj4LtoGWfT2qd8CmMRTh6vk0sKUzRg==",
+      "type": "package",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.linux-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "0pox/icXi2Q0HIux7VvnMb0qDnzFppxliBZ1YCqbqC5zgeH+vFvRwv/eiNbbdCJKtMNcYl5bvvvXBm7LeV7C5A==",
+      "type": "package",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.linux-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "FzPC71lkvhQ1iIt6CtpBvGkpPN6aCB/tkNUYeQ62BTX6Q8pti1wcd3n/lr0aJ1X0JfXUjO6g5VHyJ/Xc9ai3Jg==",
+      "type": "package",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.linux-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "yHN2WydLZ9wwsrRajTUXrQ0I1ucXlF92k3vLdp9eNvcWpWa8xUR4GIezRQP1Yp7F5qQEhYPtI9U7cX8wmxAOpw==",
+      "type": "package",
+      "path": "runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.native.system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "e+J8NEwJmMP/1QwE4ki0QWs3LphaFTwn0U6TMhaMzgcYg6wqFnEzTkhr0aVR7mqfPGjvHmw59aQd3xR19/wqJQ==",
+      "type": "package",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.osx-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "yG2lzTYeGbff4QpPZ8XxYVdjmIULuhYCdNC0N/dnAC/borjA9J3sKqAerzQKPoZQmZXSRDSpyu4lBOgKosMJ+g==",
+      "type": "package",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "runtime.osx-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
       "type": "package",
@@ -23186,6 +24885,47 @@
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
         "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Ports/8.0.0-preview.1.23110.8": {
+      "sha512": "k5q8nbCf/MB0ucgpWHCCTO7Hm3htuGb8ASVT0qD7lPVyl6pCIgfjHw7L9462MjlO7+7sC5WFLLGKFjiLX+w7yQ==",
+      "type": "package",
+      "path": "system.io.ports/8.0.0-preview.1.23110.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Ports.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Ports.targets",
+        "lib/net462/System.IO.Ports.dll",
+        "lib/net462/System.IO.Ports.xml",
+        "lib/net6.0/System.IO.Ports.dll",
+        "lib/net6.0/System.IO.Ports.xml",
+        "lib/net7.0/System.IO.Ports.dll",
+        "lib/net7.0/System.IO.Ports.xml",
+        "lib/net8.0/System.IO.Ports.dll",
+        "lib/net8.0/System.IO.Ports.xml",
+        "lib/netstandard2.0/System.IO.Ports.dll",
+        "lib/netstandard2.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net7.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net8.0/System.IO.Ports.xml",
+        "system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "system.io.ports.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -25090,25 +26830,29 @@
     "net6.0-android31.0": [
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
-      "Microsoft.Maui.Extensions >= 6.0.548"
+      "Microsoft.Maui.Extensions >= 6.0.548",
+      "System.IO.Ports >= 8.0.0-preview.1.23110.8"
     ],
     "net6.0-ios16.1": [
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
+      "System.IO.Ports >= 8.0.0-preview.1.23110.8",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-maccatalyst16.1": [
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
+      "System.IO.Ports >= 8.0.0-preview.1.23110.8",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-windows10.0.19041": [
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
-      "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194"
+      "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
+      "System.IO.Ports >= 8.0.0-preview.1.23110.8"
     ]
   },
   "packageFolders": {
@@ -25185,6 +26929,10 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
+          },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[8.0.0-preview.1.23110.8, )"
           }
         },
         "imports": [
@@ -25292,6 +27040,10 @@
             "version": "[6.0.548, )",
             "autoReferenced": true
           },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[8.0.0-preview.1.23110.8, )"
+          },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
             "version": "[6.0.1, )",
@@ -25378,6 +27130,10 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
+          },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[8.0.0-preview.1.23110.8, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
@@ -25472,6 +27228,10 @@
             "target": "Package",
             "version": "[10.0.22000.194, )",
             "autoReferenced": true
+          },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[8.0.0-preview.1.23110.8, )"
           }
         },
         "imports": [

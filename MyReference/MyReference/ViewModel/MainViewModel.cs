@@ -5,10 +5,15 @@ public partial class MainViewModel : BaseViewModel
     [ObservableProperty]
     string monTexte = "blabla";
     public ObservableCollection<Monkey> MyShownList { get; } = new();
+
+
+    DeviceOrientationServices MyDeviceOrientationService;
     public MainViewModel()
-	{
-		
-	}
+    {
+        this.MyDeviceOrientationService = new DeviceOrientationServices();
+
+        MyDeviceOrientationService.ConfigureScanner();
+    }
 
     [RelayCommand]
     public async Task GoToDetailPage(string data)
