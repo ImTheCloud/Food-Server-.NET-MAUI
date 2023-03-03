@@ -49,12 +49,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+	  <None Remove="Resources\Images\merco.jpg" />
+	  <None Remove="Resources\Raw\Student.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Services\" />
-	  <Folder Include="Model\" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>

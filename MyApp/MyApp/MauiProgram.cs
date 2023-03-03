@@ -1,4 +1,5 @@
-﻿using MyApp.View;
+﻿using MyApp.Services;
+using MyApp.View;
 
 namespace MyApp;
 
@@ -20,6 +21,9 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<DetailsViewModel>();
         builder.Services.AddSingleton<DetailsPage>();
+
+        builder.Services.AddSingleton<StudentService>();
+
 
         return builder.Build();
 	}
