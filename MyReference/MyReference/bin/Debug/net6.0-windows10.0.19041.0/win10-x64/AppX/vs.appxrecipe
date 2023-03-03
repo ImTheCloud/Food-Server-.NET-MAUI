@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-03T12:44:36.052</Modified>
+      <Modified>2023-03-03T12:50:43.523</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-03T12:44:35.703</Modified>
+      <Modified>2023-03-03T12:50:43.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.runtimeconfig.json">
       <PackagePath>MyReference.runtimeconfig.json</PackagePath>
@@ -1067,7 +1067,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.deps.json">
       <PackagePath>MyReference.deps.json</PackagePath>
-      <Modified>2023-03-03T12:44:35.896</Modified>
+      <Modified>2023-03-03T12:50:43.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
