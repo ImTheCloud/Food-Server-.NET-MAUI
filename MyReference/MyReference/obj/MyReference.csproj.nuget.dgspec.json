@@ -75,10 +75,6 @@
               "version": "[6.0.548, )",
               "autoReferenced": true
             },
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.19.0, )"
-            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -189,10 +185,6 @@
               "version": "[6.0.548, )",
               "autoReferenced": true
             },
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.19.0, )"
-            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -283,10 +275,6 @@
               "target": "Package",
               "version": "[6.0.548, )",
               "autoReferenced": true
-            },
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.19.0, )"
             },
             "System.IO.Ports": {
               "target": "Package",
@@ -385,10 +373,6 @@
               "target": "Package",
               "version": "[10.0.22000.194, )",
               "autoReferenced": true
-            },
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.19.0, )"
             },
             "System.IO.Ports": {
               "target": "Package",

@@ -31,7 +31,7 @@ public partial class MainViewModel : BaseViewModel
     {
 
         if (Globals.SerialBuffer.Count != 0)Globals.SerialBuffer.Dequeue();
-        GetFromJsonServices myServices = new();
+       // GetFromJsonServices myServices = new();
         
         
 

@@ -1,10 +1,10 @@
 ﻿[
   {
     "Name": "Pepsi Max",
-    "Location": "Belgium",
     "Details": "Boisson 50cl",
     "Image": "pepsi.png",
-    "code" :"8710398519092"
+    "code": "5410126006032",
+    "quantité": "10"
   }
   
 ]

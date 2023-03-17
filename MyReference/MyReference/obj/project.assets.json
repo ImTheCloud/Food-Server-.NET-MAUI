@@ -211,22 +211,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "runtimeTargets": {
@@ -2271,22 +2255,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "native": {
@@ -4291,22 +4259,6 @@
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -6317,22 +6269,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -8340,22 +8276,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -10357,22 +10277,6 @@
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -12380,22 +12284,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -14400,22 +14288,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -16398,22 +16270,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "runtimeTargets": {
@@ -16730,22 +16586,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "native": {
@@ -17022,22 +16862,6 @@
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -17320,22 +17144,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -17615,22 +17423,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -17904,22 +17696,6 @@
         "runtime": {
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -18199,22 +17975,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -18491,22 +18251,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -18780,22 +18524,6 @@
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -19115,22 +18843,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "native": {
@@ -19407,22 +19119,6 @@
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -19705,22 +19401,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -20000,22 +19680,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -20289,22 +19953,6 @@
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -20584,22 +20232,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -20873,22 +20505,6 @@
         "runtime": {
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -21298,22 +20914,6 @@
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
             "assetType": "native",
             "rid": "win10-x86"
-          }
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -21730,22 +21330,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package",
         "native": {
@@ -22120,22 +21704,6 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
@@ -22514,22 +22082,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -22906,22 +22458,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -23295,22 +22831,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
         "type": "package"
       },
@@ -23682,22 +23202,6 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
@@ -24077,22 +23581,6 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
-        }
-      },
-      "MongoDB.Bson/2.19.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "related": ".xml"
-          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
@@ -25278,25 +24766,6 @@
         "tools/net5.0/zh-TW/Microsoft.Build.Msix.resources.dll",
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
-      ]
-    },
-    "MongoDB.Bson/2.19.0": {
-      "sha512": "pGp9F2PWU3Dj54PiXKibuaQ5rphWkfp8/Nsy5jLp2dWZGRGlr3r/Lfwnr0PvfihFfxieUcJZ2z3VeO8RctXcvA==",
-      "type": "package",
-      "path": "mongodb.bson/2.19.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.txt",
-        "lib/net472/MongoDB.Bson.dll",
-        "lib/net472/MongoDB.Bson.xml",
-        "lib/netstandard2.0/MongoDB.Bson.dll",
-        "lib/netstandard2.0/MongoDB.Bson.xml",
-        "lib/netstandard2.1/MongoDB.Bson.dll",
-        "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.19.0.nupkg.sha512",
-        "mongodb.bson.nuspec",
-        "packageIcon.png"
       ]
     },
     "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {
@@ -27362,14 +26831,12 @@
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
-      "MongoDB.Bson >= 2.19.0",
       "System.IO.Ports >= 8.0.0-preview.1.23110.8"
     ],
     "net6.0-ios16.1": [
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
-      "MongoDB.Bson >= 2.19.0",
       "System.IO.Ports >= 8.0.0-preview.1.23110.8",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
@@ -27377,7 +26844,6 @@
       "CommunityToolkit.Mvvm >= 8.1.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
-      "MongoDB.Bson >= 2.19.0",
       "System.IO.Ports >= 8.0.0-preview.1.23110.8",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
@@ -27386,7 +26852,6 @@
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
-      "MongoDB.Bson >= 2.19.0",
       "System.IO.Ports >= 8.0.0-preview.1.23110.8"
     ]
   },
@@ -27464,10 +26929,6 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
-          },
-          "MongoDB.Bson": {
-            "target": "Package",
-            "version": "[2.19.0, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -27579,10 +27040,6 @@
             "version": "[6.0.548, )",
             "autoReferenced": true
           },
-          "MongoDB.Bson": {
-            "target": "Package",
-            "version": "[2.19.0, )"
-          },
           "System.IO.Ports": {
             "target": "Package",
             "version": "[8.0.0-preview.1.23110.8, )"
@@ -27673,10 +27130,6 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
-          },
-          "MongoDB.Bson": {
-            "target": "Package",
-            "version": "[2.19.0, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -27775,10 +27228,6 @@
             "target": "Package",
             "version": "[10.0.22000.194, )",
             "autoReferenced": true
-          },
-          "MongoDB.Bson": {
-            "target": "Package",
-            "version": "[2.19.0, )"
           },
           "System.IO.Ports": {
             "target": "Package",
