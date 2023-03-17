@@ -61,16 +61,17 @@ public partial class MainViewModel : BaseViewModel
 
         foreach (Food stu in Globals.MyStaticList)
         {
-            MyShownList.Add(stu);
             if (stu.Code == barcodeData)
             {
                 MyShownList.Add(stu);
+                break;
             }
             else
             {
-                MyShownList.Add(stu);
+                //redirect 
+                //  MyShownList.Add(stu);
             }
-            
+
         }
     }
 }
