@@ -4,7 +4,7 @@ public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
     string monTexte = "blabla";
-    public ObservableCollection<Monkey> MyShownList { get; } = new();
+    public ObservableCollection<Food> MyShownList { get; } = new();
 
 
     DeviceOrientationServices MyDeviceOrientationService;
@@ -27,7 +27,7 @@ public partial class MainViewModel : BaseViewModel
         });
     }
     [RelayCommand]
-    async Task MonkeysFromJSON()
+    async Task FoodFromJSON()
     {
 
         if (Globals.SerialBuffer.Count != 0)Globals.SerialBuffer.Dequeue();
@@ -37,12 +37,12 @@ public partial class MainViewModel : BaseViewModel
 
         if (IsBusy) return;
 
-        MonkeyService MyService = new MonkeyService();
+        FoodService MyService = new FoodService();
 
         try
         {
             IsBusy = true;
-            Globals.MyStaticList = await MyService.GetMonkeys();
+            Globals.MyStaticList = await MyService.GetFood();
         }
         catch (Exception ex)
         {
@@ -53,7 +53,7 @@ public partial class MainViewModel : BaseViewModel
 
         MyShownList.Clear();
 
-        foreach (Monkey stu in Globals.MyStaticList)
+        foreach (Food stu in Globals.MyStaticList)
         {
             MyShownList.Add(stu);
         }

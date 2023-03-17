@@ -1,0 +1,19 @@
+﻿[
+  {
+    "Name": "Pepsi Max",
+    "Details": "Boisson 50cl",
+    "Image": "pepsi.png",
+    "Code": "5410126006031",
+    "Prix": 1.50,
+    "Quantite": 10
+  },
+  {
+    "Name": "Speculoos",
+    "Details": "Biscuits 310g",
+    "Image": "speculos.png",
+    "Code": "5410126006032",
+    "Prix": 2,
+    "Quantite": 15
+  }
+  
+]

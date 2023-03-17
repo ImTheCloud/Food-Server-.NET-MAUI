@@ -23,6 +23,6 @@ global using MyReference.Services;
 public class Globals
 {
 
-    public static List<Monkey> MyStaticList = new List<Monkey>();
+    public static List<Food> MyStaticList = new List<Food>();
     internal static Queue<string> SerialBuffer = new Queue<string>();
 }

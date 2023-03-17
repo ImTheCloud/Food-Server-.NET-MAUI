@@ -21,7 +21,7 @@ public static class MauiProgram
         builder.Services.AddTransient<DetailPage>();
 
 
-        builder.Services.AddTransient<MonkeyService>();
+        builder.Services.AddTransient<FoodService>();
 
         return builder.Build();
 	}

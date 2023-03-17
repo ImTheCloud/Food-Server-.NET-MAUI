@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-17T13:10:07.492</Modified>
+      <Modified>2023-03-17T13:43:10.982</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-17T13:10:07.036</Modified>
+      <Modified>2023-03-17T13:43:10.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.runtimeconfig.json">
       <PackagePath>MyReference.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.dll">
       <PackagePath>MyReference.dll</PackagePath>
-      <Modified>2023-03-17T13:10:04.329</Modified>
+      <Modified>2023-03-17T13:43:09.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyReference.exe</PackagePath>
-      <Modified>2023-03-17T13:10:04.361</Modified>
+      <Modified>2023-03-17T13:43:09.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.13\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1071,7 +1071,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MyReference.deps.json">
       <PackagePath>MyReference.deps.json</PackagePath>
-      <Modified>2023-03-17T13:10:07.304</Modified>
+      <Modified>2023-03-17T13:43:10.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1089,9 +1089,9 @@
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-02-18T09:46:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\Resources\Raw\monkeydata.json">
-      <PackagePath>monkeydata.json</PackagePath>
-      <Modified>2023-03-17T13:06:33.142</Modified>
+    <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\Resources\Raw\foodData.json">
+      <PackagePath>foodData.json</PackagePath>
+      <Modified>2023-03-17T13:33:03.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -1123,211 +1123,215 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-03-03T14:55:12.171</Modified>
+      <Modified>2023-03-17T13:28:25.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.355</Modified>
+      <Modified>2023-03-17T13:28:25.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.365</Modified>
+      <Modified>2023-03-17T13:28:25.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.373</Modified>
+      <Modified>2023-03-17T13:28:25.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.386</Modified>
+      <Modified>2023-03-17T13:28:25.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.433</Modified>
+      <Modified>2023-03-17T13:28:25.917</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.224</Modified>
+      <Modified>2023-03-17T13:28:25.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.227</Modified>
+      <Modified>2023-03-17T13:28:25.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.238</Modified>
+      <Modified>2023-03-17T13:28:25.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.229</Modified>
+      <Modified>2023-03-17T13:28:25.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.231</Modified>
+      <Modified>2023-03-17T13:28:25.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.208</Modified>
+      <Modified>2023-03-17T13:28:25.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.210</Modified>
+      <Modified>2023-03-17T13:28:25.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.222</Modified>
+      <Modified>2023-03-17T13:28:25.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.213</Modified>
+      <Modified>2023-03-17T13:28:25.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.215</Modified>
+      <Modified>2023-03-17T13:28:25.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.177</Modified>
+      <Modified>2023-03-17T13:28:25.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.180</Modified>
+      <Modified>2023-03-17T13:28:25.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.183</Modified>
+      <Modified>2023-03-17T13:28:25.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.186</Modified>
+      <Modified>2023-03-17T13:28:25.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.190</Modified>
+      <Modified>2023-03-17T13:28:25.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.193</Modified>
+      <Modified>2023-03-17T13:28:25.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.195</Modified>
+      <Modified>2023-03-17T13:28:25.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.205</Modified>
+      <Modified>2023-03-17T13:28:25.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.198</Modified>
+      <Modified>2023-03-17T13:28:25.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.200</Modified>
+      <Modified>2023-03-17T13:28:25.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.274</Modified>
+      <Modified>2023-03-17T13:28:25.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.277</Modified>
+      <Modified>2023-03-17T13:28:25.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.283</Modified>
+      <Modified>2023-03-17T13:28:25.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.289</Modified>
+      <Modified>2023-03-17T13:28:25.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.300</Modified>
+      <Modified>2023-03-17T13:28:25.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.256</Modified>
+      <Modified>2023-03-17T13:28:25.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.259</Modified>
+      <Modified>2023-03-17T13:28:25.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.262</Modified>
+      <Modified>2023-03-17T13:28:25.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.265</Modified>
+      <Modified>2023-03-17T13:28:25.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.270</Modified>
+      <Modified>2023-03-17T13:28:25.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.241</Modified>
+      <Modified>2023-03-17T13:28:25.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.244</Modified>
+      <Modified>2023-03-17T13:28:25.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.247</Modified>
+      <Modified>2023-03-17T13:28:25.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.250</Modified>
+      <Modified>2023-03-17T13:28:25.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.254</Modified>
+      <Modified>2023-03-17T13:28:25.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.304</Modified>
+      <Modified>2023-03-17T13:28:25.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.309</Modified>
+      <Modified>2023-03-17T13:28:25.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.316</Modified>
+      <Modified>2023-03-17T13:28:25.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.325</Modified>
+      <Modified>2023-03-17T13:28:25.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.348</Modified>
+      <Modified>2023-03-17T13:28:25.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.170</Modified>
+      <Modified>2023-03-17T13:28:25.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.179</Modified>
+      <Modified>2023-03-17T13:28:25.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.191</Modified>
+      <Modified>2023-03-17T13:28:25.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.208</Modified>
+      <Modified>2023-03-17T13:28:25.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-03-03T14:55:12.250</Modified>
+      <Modified>2023-03-17T13:28:25.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pepsi.scale-100.png">
       <PackagePath>pepsi.scale-100.png</PackagePath>
       <Modified>2023-03-03T14:47:51.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\speculos.scale-100.png">
+      <PackagePath>speculos.scale-100.png</PackagePath>
+      <Modified>2023-03-17T13:28:10.850</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

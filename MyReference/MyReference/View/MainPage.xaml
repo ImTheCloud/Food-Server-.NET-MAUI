@@ -27,17 +27,17 @@
 
     <ScrollView>
         <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,*" RowDefinitions="Auto,*" BackgroundColor="Transparent">
-            <Button Text="Add monkeys from JSON" 
+            <Button Text="Add Food" 
                 Grid.Row="0" 
                 Grid.Column="0"
                 HeightRequest="60"
                 WidthRequest="200"
                 HorizontalOptions="Start"
-                Command="{Binding MonkeysFromJSONCommand}"
+                Command="{Binding FoodFromJSONCommand}"
                 IsEnabled="{Binding IsNotBusy}" />
             <CollectionView ItemsSource="{Binding MyShownList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Monkey">
+                    <DataTemplate x:DataType="model:Food">
                         <Grid Padding="10" ColumnDefinitions="500,*" >
                             <Frame HeightRequest="125" Style="{StaticResource CardView}">
                                 <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Grey">
@@ -49,8 +49,33 @@
                                     <VerticalStackLayout    VerticalOptions="Center"
                                                         Grid.Column="1"
                                                         Padding="10">
+                                        
+                                        <HorizontalStackLayout>
+                                        <Label VerticalOptions="Center" Text="Name : "/>
                                         <Label VerticalOptions="Center" Text="{Binding Name}"/>
-                                        <Label VerticalOptions="Center" Text="{Binding Location}"/>
+                                        </HorizontalStackLayout>
+                                        
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Code : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Code}"/>
+                                        </HorizontalStackLayout>
+                                        
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Quantité : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Quantite}"/>
+                                        </HorizontalStackLayout>
+
+                                         <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Details : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Details}"/>
+                                        </HorizontalStackLayout>
+
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Prix : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Prix}"/>
+                                            <Label VerticalOptions="Center" Text="€"/>
+                                        </HorizontalStackLayout>
+
                                     </VerticalStackLayout>
                                 </Grid>
                             </Frame>
