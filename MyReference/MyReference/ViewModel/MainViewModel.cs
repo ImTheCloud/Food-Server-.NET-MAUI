@@ -29,8 +29,8 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     async Task FoodFromJSON()
     {
-
-        if (Globals.SerialBuffer.Count != 0)Globals.SerialBuffer.Dequeue();
+        string data = "";
+       
        // GetFromJsonServices myServices = new();
         
         
@@ -53,9 +53,24 @@ public partial class MainViewModel : BaseViewModel
 
         MyShownList.Clear();
 
+        while (Globals.SerialBuffer.Count == 0)
+        {
+            await Task.Delay(100);
+        }
+        var barcodeData = Globals.SerialBuffer.Dequeue();
+
         foreach (Food stu in Globals.MyStaticList)
         {
             MyShownList.Add(stu);
+            if (stu.Code == barcodeData)
+            {
+                MyShownList.Add(stu);
+            }
+            else
+            {
+                MyShownList.Add(stu);
+            }
+            
         }
     }
 }
