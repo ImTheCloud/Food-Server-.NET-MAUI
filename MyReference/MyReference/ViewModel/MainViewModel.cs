@@ -64,7 +64,6 @@ public partial class MainViewModel : BaseViewModel
             if (stu.Code == barcodeData)
             {
                 MyShownList.Add(stu);
-                break;
             }
             else
             {
