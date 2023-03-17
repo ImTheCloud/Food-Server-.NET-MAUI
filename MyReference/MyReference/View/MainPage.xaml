@@ -8,7 +8,7 @@
              x:Name="MyPage">
 
     <ContentPage.MenuBarItems>
-        <MenuBarItem Text="Menu 1" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
+        <MenuBarItem Text="Inventaire" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="{Binding MonTexte}" 
                             Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToDetailPageCommand}"
                             CommandParameter="From Menu1!"/>

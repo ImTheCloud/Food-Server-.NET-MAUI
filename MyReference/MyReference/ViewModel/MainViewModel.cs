@@ -3,7 +3,7 @@ namespace MyReference.ViewModel;
 public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
-    string monTexte = "blabla";
+    string monTexte = "Inventaire";
     public ObservableCollection<Food> MyShownList { get; } = new();
 
 
