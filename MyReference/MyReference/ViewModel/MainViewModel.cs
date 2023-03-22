@@ -26,7 +26,17 @@ public partial class MainViewModel : BaseViewModel
             {"Databc", data }
         });
     }
+
     [RelayCommand]
+    public async Task GoToMainPage(string data)
+    {
+        await Shell.Current.GoToAsync(nameof(MainPage), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+        });
+    }
+    [RelayCommand]
+
     async Task FoodFromJSON()
     {
         string data = "";
@@ -52,6 +62,8 @@ public partial class MainViewModel : BaseViewModel
         finally { IsBusy = false; }
 
         MyShownList.Clear();
+
+
 
         while (Globals.SerialBuffer.Count == 0)
         {
