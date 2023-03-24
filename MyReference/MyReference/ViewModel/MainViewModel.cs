@@ -20,7 +20,7 @@ public partial class MainViewModel : BaseViewModel
 
         MyDeviceOrientationService.ConfigureScanner();
 
-        MyDeviceOrientationService.SerialBuffer.ch += SerialBuffer_changed;
+        MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_changed;
     }
 
     private async void SerialBuffer_changed(object sender, EventArgs e)
@@ -56,7 +56,7 @@ public partial class MainViewModel : BaseViewModel
             }
             else
             {
-               // await Navigation.NavigateAsync("DetailPage");
+                await Navigation.PushAsync(new DetailPage());
             }
 
         }
