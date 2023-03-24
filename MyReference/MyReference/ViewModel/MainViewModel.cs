@@ -1,5 +1,3 @@
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-
 namespace MyReference.ViewModel;
 
 public partial class MainViewModel : BaseViewModel
@@ -28,10 +26,6 @@ public partial class MainViewModel : BaseViewModel
         DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
         var barcodeData = myQueue.Dequeue().ToString();
 
-       
-
-
-
         FoodService MyService = new FoodService();
 
         try
@@ -56,12 +50,16 @@ public partial class MainViewModel : BaseViewModel
             }
             else
             {
-                await Navigation.PushAsync(new DetailPage());
+                //IsButtonVisible = true;
+                //redirection();
             }
-
         }
     }
 
+    public async Task redirection()
+    {
+        await Shell.Current.GoToAsync(nameof(DetailPage));
+    }
 
     [RelayCommand]
     public async Task GoToDetailPage(string data)

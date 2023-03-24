@@ -25,6 +25,8 @@
     <ScrollView>
         <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,*" RowDefinitions="Auto,*" BackgroundColor="Grey">
 
+
+
             <CollectionView ItemsSource="{Binding MyShownList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
@@ -36,6 +38,8 @@
                                 HeightRequest="100"
                                 Source="{Binding Image}"
                                 WidthRequest="100" />
+                                    
+
                                     <VerticalStackLayout    VerticalOptions="Center"
                                                         Grid.Column="1"
                                                         Padding="10">
@@ -65,8 +69,11 @@
                                             <Label VerticalOptions="Center" Text="{Binding Prix}"/>
                                             <Label VerticalOptions="Center" Text="€"/>
                                         </HorizontalStackLayout>
-
+                        
                                     </VerticalStackLayout>
+
+                                   
+
                                 </Grid>
                             </Frame>
                         </Grid>
