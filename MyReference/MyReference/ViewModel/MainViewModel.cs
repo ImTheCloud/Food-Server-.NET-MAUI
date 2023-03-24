@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
 namespace MyReference.ViewModel;
 
 public partial class MainViewModel : BaseViewModel
@@ -18,7 +20,7 @@ public partial class MainViewModel : BaseViewModel
 
         MyDeviceOrientationService.ConfigureScanner();
 
-        MyDeviceOrientationService..Changed += SerialBuffer_changed;
+        MyDeviceOrientationService.SerialBuffer.ch += SerialBuffer_changed;
     }
 
     private async void SerialBuffer_changed(object sender, EventArgs e)
@@ -28,7 +30,7 @@ public partial class MainViewModel : BaseViewModel
 
        
 
-     
+
 
         FoodService MyService = new FoodService();
 
@@ -54,8 +56,7 @@ public partial class MainViewModel : BaseViewModel
             }
             else
             {
-                //redirect 
-                //  MyShownList.Add(stu);
+               // await Navigation.NavigateAsync("DetailPage");
             }
 
         }
