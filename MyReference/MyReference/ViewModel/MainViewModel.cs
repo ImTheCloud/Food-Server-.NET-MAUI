@@ -3,7 +3,8 @@ namespace MyReference.ViewModel;
 public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
-    string monTexte = "Inventaire";
+
+    string activeTarget;
     public ObservableCollection<Food> MyShownList { get; } = new();
 
 
@@ -16,7 +17,50 @@ public partial class MainViewModel : BaseViewModel
         this.MyDeviceOrientationService = new DeviceOrientationServices();
 
         MyDeviceOrientationService.ConfigureScanner();
+
+        MyDeviceOrientationService..Changed += SerialBuffer_changed;
     }
+
+    private async void SerialBuffer_changed(object sender, EventArgs e)
+    {
+        DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
+        var barcodeData = myQueue.Dequeue().ToString();
+
+       
+
+     
+
+        FoodService MyService = new FoodService();
+
+        try
+        {
+           
+            Globals.MyStaticList = await MyService.GetFood();
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Unable to get Students: {ex.Message}");
+            await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
+        }
+       
+
+        MyShownList.Clear();
+
+        foreach (Food stu in Globals.MyStaticList)
+        {
+            if (stu.Code == barcodeData)
+            {
+                MyShownList.Add(stu);
+            }
+            else
+            {
+                //redirect 
+                //  MyShownList.Add(stu);
+            }
+
+        }
+    }
+
 
     [RelayCommand]
     public async Task GoToDetailPage(string data)
@@ -35,54 +79,6 @@ public partial class MainViewModel : BaseViewModel
             {"Databc", data }
         });
     }
-    [RelayCommand]
 
-    async Task FoodFromJSON()
-    {
-        string data = "";
-       
-       // GetFromJsonServices myServices = new();
-        
-        
-
-        if (IsBusy) return;
-
-        FoodService MyService = new FoodService();
-
-        try
-        {
-            IsBusy = true;
-            Globals.MyStaticList = await MyService.GetFood();
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"Unable to get Students: {ex.Message}");
-            await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
-        }
-        finally { IsBusy = false; }
-
-        MyShownList.Clear();
-
-
-
-        while (Globals.SerialBuffer.Count == 0)
-        {
-            await Task.Delay(100);
-        }
-        var barcodeData = Globals.SerialBuffer.Dequeue();
-
-        foreach (Food stu in Globals.MyStaticList)
-        {
-            if (stu.Code == barcodeData)
-            {
-                MyShownList.Add(stu);
-            }
-            else
-            {
-                //redirect 
-                //  MyShownList.Add(stu);
-            }
-
-        }
-    }
+      
 }

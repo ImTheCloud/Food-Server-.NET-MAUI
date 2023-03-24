@@ -24,17 +24,7 @@
 
     <ScrollView>
         <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,*" RowDefinitions="Auto,*" BackgroundColor="Grey">
-            <Button Text="Ajouter un aliment" 
-                     Grid.Row="0" 
-                     Grid.Column="0"
-                     HeightRequest="60"
-                     WidthRequest="200"
-                     HorizontalOptions="Start"
-                     Command="{Binding FoodFromJSONCommand}"
-                     IsEnabled="{Binding IsNotBusy}"
-                     BackgroundColor="DarkGray"
-                     TextColor="White" />
-            
+
             <CollectionView ItemsSource="{Binding MyShownList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
@@ -83,13 +73,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="Fill"
-                           VerticalOptions="Center"
-                           Color="{StaticResource Primary}"
-                           Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
+            
         </Grid>
     </ScrollView>
 </ContentPage>

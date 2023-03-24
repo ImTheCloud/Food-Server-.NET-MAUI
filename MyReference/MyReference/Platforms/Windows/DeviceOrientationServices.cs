@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
@@ -11,9 +12,13 @@ namespace MyReference.Services
     {
         SerialPort mySerialPort;
 
+        public QueueBuffer SerialBuffer;
+
 
         public partial void ConfigureScanner()
         {
+            this.SerialBuffer = new();
+
             this.mySerialPort = new SerialPort();
             string ComPort = "COM4";
             if (ComPort != "")
@@ -50,8 +55,9 @@ namespace MyReference.Services
 
             data = sp.ReadTo("\r");
 
-            Globals.SerialBuffer.Enqueue(data);
+            SerialBuffer.Enqueue(data);
         }
 
     }
 }
+

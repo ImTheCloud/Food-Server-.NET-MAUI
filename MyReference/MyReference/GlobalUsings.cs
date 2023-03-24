@@ -24,5 +24,5 @@ public class Globals
 {
 
     public static List<Food> MyStaticList = new List<Food>();
-    internal static Queue<string> SerialBuffer = new Queue<string>();
+   // internal static Queue<string> SerialBuffer = new Queue<string>();
 }

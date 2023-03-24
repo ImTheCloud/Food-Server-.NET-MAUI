@@ -4,23 +4,41 @@
              x:Class="MyReference.View.DetailPage"
              Title="Inventaire">
 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <Label Text="Nom:" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Entrez le nom de l'article" x:Name="NomEntry" TextColor="Black"/>
 
+        <Label Text="Détails:" Grid.Row="2" Grid.Column="0" TextColor="Black"/>
+        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Entrez les détails de l'article" x:Name="DetailsEntry" TextColor="Black"/>
 
-    <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,*" RowDefinitions="Auto,*" BackgroundColor="Grey">
-        <Button Text="Afficher l'inventaire" 
-                     Grid.Row="0" 
-                     Grid.Column="0"
-                     HeightRequest="60"
-                     WidthRequest="200"
-                     HorizontalOptions="Start"
-                     Command="{Binding FoodFromJSONCommand}"
-                     IsEnabled="{Binding IsNotBusy}"
-                     BackgroundColor="DarkGray"
-                     TextColor="White" />
+        <Label Text="Image:" Grid.Row="3" Grid.Column="0" TextColor="Black" />
+        <Entry Grid.Row="3" Grid.Column="1" Placeholder="Entrez l'URL de l'image" x:Name="ImageEntry" TextColor="Black"/>
 
+        <Label Text="Code:" Grid.Row="4" Grid.Column="0" TextColor="Black"/>
+        <Entry Grid.Row="4" Grid.Column="1" Placeholder="Entrez le code de l'article" x:Name="CodeEntry" TextColor="Black"/>
+
+        <Label Text="Prix:" Grid.Row="1" Grid.Column="0" TextColor="Black"/>
+        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Entrez le prix de l'article" x:Name="PrixEntry" TextColor="Black"/>
+
+        <Label Text="Quantité:" Grid.Row="5" Grid.Column="0" TextColor="Black"/>
+        <Entry Grid.Row="5" Grid.Column="1" Placeholder="Entrez la quantité de l'article" x:Name="QuantiteEntry" TextColor="Black"/>
+
+        <Button Text="Valider" Grid.Row="6" Grid.ColumnSpan="2" />
     </Grid>
-
-
 
 </ContentPage>

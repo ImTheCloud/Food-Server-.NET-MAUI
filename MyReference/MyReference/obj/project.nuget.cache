@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nZ6uJrNzkDMU0l4iu4PT3lqrs0ut2CVTcHq/Asg0pJTsf2qzd81suVdkwqqKwi9NNBp3iRv6lOCVn4ebj99lnw==",
+  "dgSpecHash": "ZPYaqk1kCKDitCCbADaGaJl3WzB9btpqPneCAHJatr/S9atYs7vsGYiQW+/YEc0Ajmv1XWrB74yOUtKvYLp0+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.52\\microsoft.maui.graphics.win2d.winui.desktop.7.0.52.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221109.1\\microsoft.windowsappsdk.1.2.221109.1.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",

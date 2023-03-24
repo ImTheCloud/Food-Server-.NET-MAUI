@@ -3,7 +3,7 @@
 "Name": "Pepsi Max",
 "Details": "Boisson 50cl",
 "Image": "pepsi.png",
-"Code": "5410126006031",
+"Code": "3560070260614",
 "Prix": 1.50,
 "Quantite": 10
 },
@@ -22,77 +22,5 @@
   "Code": "1234567890",
   "Prix": 2.50,
   "Quantite": 20
-},
-{
-  "Name": "Pain de mie complet",
-  "Details": "Pain de mie 500g",
-  "Image": "pain_de_mie.png",
-  "Code": "1234567891",
-  "Prix": 1.80,
-  "Quantite": 25
-},
-{
-  "Name": "Lait demi-écrémé",
-  "Details": "Lait 1L",
-  "Image": "lait.png",
-  "Code": "1234567892",
-  "Prix": 1.20,
-  "Quantite": 30
-},
-{
-  "Name": "Pâtes penne",
-  "Details": "Pâtes 500g",
-  "Image": "penne.png",
-  "Code": "1234567893",
-  "Prix": 1.50,
-  "Quantite": 40
-},
-{
-  "Name": "Chocolat noir 70%",
-  "Details": "Tablette de chocolat 100g",
-  "Image": "chocolat_noir.png",
-  "Code": "1234567894",
-  "Prix": 2.50,
-  "Quantite": 15
-},
-{
-  "Name": "Yaourt à la vanille",
-  "Details": "Yaourt 4x125g",
-  "Image": "yaourt_vanille.png",
-  "Code": "1234567895",
-  "Prix": 2.20,
-  "Quantite": 20
-},
-{
-  "Name": "Thon au naturel",
-  "Details": "Boîte de thon 160g",
-  "Image": "thon.png",
-  "Code": "1234567896",
-  "Prix": 2.80,
-  "Quantite": 10
-},
-{
-  "Name": "Fromage râpé",
-  "Details": "Fromage râpé 200g",
-    "Image": "fromage_rape.png",
-    "Code": "1234567897",
-    "Prix": 2.00,
-    "Quantite": 20
-  },
-  {
-    "Name": "Jus d'orange",
-    "Details": "Jus d'orange frais 1L",
-    "Image": "jus_orange.png",
-    "Code": "1234567898",
-    "Prix": 3.00,
-    "Quantite": 15
-  },
-  {
-    "Name": "Sardines à l'huile",
-    "Details": "Boîte de sardines 135g",
-    "Image": "sardines.png",
-    "Code": "1234567899",
-    "Prix": 1.50,
-    "Quantite": 10
-  }
+}
 ]
