@@ -657,3 +657,8 @@ C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\My
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.dll
+C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll

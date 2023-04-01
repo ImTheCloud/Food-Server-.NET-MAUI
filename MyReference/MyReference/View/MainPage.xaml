@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
              xmlns:model="clr-namespace:MyReference.Model"
-             Title="Ajouter un aliment"
+             Title="Scanner un aliment"
              x:DataType="viewmodel:MainViewModel"
              x:Class="MyReference.MainPage"
              x:Name="MyPage"
@@ -11,12 +11,9 @@
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Magasin" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
-            <MenuFlyoutItem Text="Inventaire" 
+            <MenuFlyoutItem Text="Ajouter un aliment" 
                             Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToDetailPageCommand}"
                             CommandParameter="From Inventaire !"/>
-            <MenuFlyoutItem Text="Ajouter un aliment" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToMainPage}"
-                            CommandParameter="From Menu1!"/>
         </MenuBarItem>
 
       

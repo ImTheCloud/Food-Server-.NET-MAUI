@@ -42,18 +42,23 @@ public partial class MainViewModel : BaseViewModel
 
         MyShownList.Clear();
 
+        bool isFoodFound = false;
         foreach (Food stu in Globals.MyStaticList)
         {
             if (stu.Code == barcodeData)
             {
                 MyShownList.Add(stu);
+                isFoodFound = true;
             }
-            else
-            {
-                //IsButtonVisible = true;
-                //redirection();
-            }
+           
         }
+
+        if (!isFoodFound)
+        {
+            await redirection();
+            //En phase de test
+        }
+
     }
 
     public async Task redirection()
