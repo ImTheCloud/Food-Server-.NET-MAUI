@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>882175a3-bd2d-4f7b-93d7-49d6149dbf1d</PackageIdentityName>
-    <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=publishScanner</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,36 +18,36 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>91FEE3DCF05330B39B86C0FF89095294762C0BA441F511D0861CE89A6DABE36E</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>882175a3-bd2d-4f7b-93d7-49d6149dbf1d_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>882175a3-bd2d-4f7b-93d7-49d6149dbf1d_9zz4h110yvjzm!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>77151F2BBF3DF1A5ECB739E0AF7D41DE1E536EA1882EC436C0FA6028ED3BB0C1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>882175a3-bd2d-4f7b-93d7-49d6149dbf1d_1.0.0.0_x64__3vn877dxnc3kw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>882175a3-bd2d-4f7b-93d7-49d6149dbf1d_3vn877dxnc3kw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>882175a3-bd2d-4f7b-93d7-49d6149dbf1d</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=User Name</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.1</RegisteredVersion>
+    <RegisteredPackagePublisher>CN=publishScanner</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-12T21:34:12.625</Modified>
+      <Modified>2023-04-21T13:47:49.614</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-12T21:34:11.838</Modified>
+      <Modified>2023-04-21T13:47:49.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.runtimeconfig.json">
       <PackagePath>MyReference.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-01T13:50:54.397</Modified>
+      <Modified>2023-04-21T13:47:48.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.dll">
       <PackagePath>MyReference.dll</PackagePath>
-      <Modified>2023-04-01T13:50:52.918</Modified>
+      <Modified>2023-04-21T13:47:46.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyReference.exe</PackagePath>
-      <Modified>2023-04-01T13:50:52.941</Modified>
+      <Modified>2023-04-21T13:47:46.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.2\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -943,7 +943,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.deps.json">
       <PackagePath>MyReference.deps.json</PackagePath>
-      <Modified>2023-04-12T21:34:12.477</Modified>
+      <Modified>2023-04-21T13:47:49.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

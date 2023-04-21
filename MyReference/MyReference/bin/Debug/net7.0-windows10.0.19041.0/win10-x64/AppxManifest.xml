@@ -7,7 +7,7 @@
 
     Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="882175a3-bd2d-4f7b-93d7-49d6149dbf1d" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
+  <Identity Name="882175a3-bd2d-4f7b-93d7-49d6149dbf1d" Publisher="CN=publishScanner" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="1F598590-8DE0-4C38-8248-59E67CC9F9A8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>MyReference</DisplayName>
