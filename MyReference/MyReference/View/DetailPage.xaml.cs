@@ -7,6 +7,8 @@ public partial class DetailPage : ContentPage
 	{
 		InitializeComponent();
         BindingContext = viewModel;
+        ValidateButton.Command = new Command(SaveItem);
+
     }
     protected override void OnNavigatedTo(NavigatedToEventArgs args)
     {
@@ -29,7 +31,24 @@ public partial class DetailPage : ContentPage
     {
         await Shell.Current.GoToAsync("///MainPage");
     }
+    public async void SaveItem()
+    {
+        var item = new Food
+        {
+            Name = NomEntry.Text,
+            Quantite = int.Parse(QuantiteEntry.Text),
+            Details = DetailsEntry.Text,
+            Image = ImageEntry.Text,
+            Code = CodeEntry.Text,
+            Prix = double.Parse(PrixEntry.Text)
 
+        };
+
+        FoodService myService = new();
+
+        Globals.MyStaticList.Add(item);
+        await myService.SetFoodJson();
+    }
 
 
 
