@@ -37,13 +37,18 @@ public partial class ShowProductViewModel : BaseViewModel
                 isFoodFound = true;
             }
 
-        }
 
+
+        }
+        if (!isFoodFound)
+        {
+            //await GoToAddProductPage("nouveau produit");
+        }
 
     }
 
     [RelayCommand]
-    public async Task GoToDetailPage(string data)
+    public async Task GoToAddProductPage(string data)
     {
         await Shell.Current.GoToAsync(nameof(AddProductPage), true, new Dictionary<string, object>
         {
@@ -52,7 +57,7 @@ public partial class ShowProductViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    public async Task GoToMainPage(string data)
+    public async Task GoToShowProductPage(string data)
     {
         await Shell.Current.GoToAsync(nameof(ShowProductPage), true, new Dictionary<string, object>
         {

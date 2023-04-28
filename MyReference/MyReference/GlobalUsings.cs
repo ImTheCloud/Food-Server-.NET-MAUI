@@ -14,11 +14,6 @@ global using System.Runtime.CompilerServices;
 global using System.Text.Json;
 
 
-global using MyReference.ViewModel;
-global using MyReference.View;
-global using MyReference.Model;
-global using MyReference.Services;
-
 
 public class Globals
 {

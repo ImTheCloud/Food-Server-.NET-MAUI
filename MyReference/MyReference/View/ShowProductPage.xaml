@@ -12,7 +12,7 @@
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Magasin" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter un aliment" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShowProductViewModel}}, Path=GoToDetailPageCommand}"
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShowProductViewModel}}, Path=GoToAddProductPageCommand}"
                             CommandParameter="From Inventaire !"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>

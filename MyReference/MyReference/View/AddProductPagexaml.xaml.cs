@@ -20,7 +20,7 @@ public partial class AddProductPage : ContentPage
         var item = new Food
         {
             Name = NomEntry.Text,
-            Quantite = int.Parse(QuantiteEntry.Text),
+            Quantite = int.Parse(QuantiteEntry.Text),   
             Details = DetailsEntry.Text,
             Image = ImageEntry.Text,
             Code = CodeEntry.Text,
