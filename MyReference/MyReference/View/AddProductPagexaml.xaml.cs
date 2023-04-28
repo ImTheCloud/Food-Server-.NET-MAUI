@@ -1,11 +1,11 @@
 
 namespace MyReference.View;
 
-public partial class DetailPage : ContentPage
+public partial class AddProductPage : ContentPage
 {
-	public DetailPage(DetailViewModel viewModel)
-	{
-		InitializeComponent();
+    public AddProductPage(AddProductViewModel viewModel)
+    {
+        InitializeComponent();
         BindingContext = viewModel;
 
     }

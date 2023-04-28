@@ -11,7 +11,7 @@
 
     <ShellContent
         Shell.BackgroundColor="Gray"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage"/>
+        ContentTemplate="{DataTemplate local:ShowProductPage}"
+        Route="ShowProductPage"/>
 
 </Shell>

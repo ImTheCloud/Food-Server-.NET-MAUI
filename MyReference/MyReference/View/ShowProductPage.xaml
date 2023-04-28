@@ -1,18 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
 	xmlns:model="clr-namespace:MyReference.Model"
     Title="Scanner un aliment"
-    x:DataType="viewmodel:MainViewModel"
-    x:Class="MyReference.MainPage"
+    x:DataType="viewmodel:ShowProductViewModel"
+    x:Class="MyReference.ShowProductPage"
     x:Name="MyPage">
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Magasin" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter un aliment" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToDetailPageCommand}"
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShowProductViewModel}}, Path=GoToDetailPageCommand}"
                             CommandParameter="From Inventaire !"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>

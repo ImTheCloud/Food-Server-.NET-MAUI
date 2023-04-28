@@ -1,6 +1,6 @@
 namespace MyReference.ViewModel;
 
-public partial class MainViewModel : BaseViewModel
+public partial class ShowProductViewModel : BaseViewModel
 {
     [ObservableProperty]
 
@@ -12,7 +12,7 @@ public partial class MainViewModel : BaseViewModel
 
     [ObservableProperty]
     public string monCode;
-    public MainViewModel()
+    public ShowProductViewModel()
     {
         this.MyDeviceOrientationService = new DeviceOrientationServices();
 
@@ -36,7 +36,7 @@ public partial class MainViewModel : BaseViewModel
                 MyShownList.Add(stu);
                 isFoodFound = true;
             }
-           
+
         }
 
 
@@ -45,7 +45,7 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     public async Task GoToDetailPage(string data)
     {
-        await Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(AddProductPage), true, new Dictionary<string, object>
         {
             {"Databc", data }
         });
@@ -54,11 +54,11 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     public async Task GoToMainPage(string data)
     {
-        await Shell.Current.GoToAsync(nameof(MainPage), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(ShowProductPage), true, new Dictionary<string, object>
         {
             {"Databc", data }
         });
     }
 
-      
+
 }
