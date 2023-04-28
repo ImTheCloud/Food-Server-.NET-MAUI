@@ -1,6 +1,7 @@
 
 namespace MyReference.View;
 
+
 public partial class AddProductPage : ContentPage
 {
     public AddProductPage(AddProductViewModel viewModel)
@@ -31,8 +32,7 @@ public partial class AddProductPage : ContentPage
 
         Globals.MyStaticList.Add(item);
         await myService.SetFoodJson();
+        await DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
     }
-
-
 
 }
