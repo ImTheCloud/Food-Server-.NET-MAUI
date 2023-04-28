@@ -1,0 +1,1 @@
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppPackages\MyReference_1.0.0.0_Test\MyReference_1.0.0.0_x86.msix
