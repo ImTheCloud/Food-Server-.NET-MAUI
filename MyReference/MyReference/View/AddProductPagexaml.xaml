@@ -4,36 +4,28 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
     x:Class="MyReference.View.AddProductPage"
-    Title="Ajouter un aliment">
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Label Text="Nom:" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Entrez le nom de l'article" x:Name="NomEntry" TextColor="Black"/>
-        <Label Text="Détails:" Grid.Row="2" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Entrez les détails de l'article" x:Name="DetailsEntry" TextColor="Black"/>
-        <Label Text="Image:" Grid.Row="3" Grid.Column="0" TextColor="Black" />
-        <Entry Grid.Row="3" Grid.Column="1" Placeholder="Entrez l'URL de l'image" x:Name="ImageEntry" TextColor="Black" />
-        <Label Text="Code:" Grid.Row="4" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="4" Grid.Column="1" Placeholder="Entrez le code de l'article" x:Name="CodeEntry" TextColor="Black"/>
-        <Label Text="Prix:" Grid.Row="1" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Entrez le prix de l'article" x:Name="PrixEntry" TextColor="Black"/>
-        <Label Text="Quantité:" Grid.Row="5" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="5" Grid.Column="1" Placeholder="Entrez la quantité de l'article" x:Name="QuantiteEntry" TextColor="Black"/>
-        <Button Text="Valider" x:Name="ValidateButton"  Clicked="OnValidateButtonClicked" Grid.Row="6" Grid.ColumnSpan="2" />
-
+    Title="Ajouter un aliment"
+    BackgroundImageSource="backgroundProduct.png">
+    
+    <Grid HorizontalOptions="Center">
+        <StackLayout  HorizontalOptions="Center">
+            <Border BackgroundColor="#fff" Margin="10">
+                <StackLayout Padding="10" HorizontalOptions="Center">
+                    <Label Text="Nom:" TextColor="Black" FontSize="20" WidthRequest="300" HeightRequest="30"/>
+                    <Entry Placeholder="Entrez le nom de l'article" x:Name="NomEntry" TextColor="Black" Text="{Binding Name}" Margin="0,5,0,10"/>
+                    <Label Text="Détails:" TextColor="Black" FontSize="20"/>
+                    <Entry Placeholder="Entrez les détails de l'article" x:Name="DetailsEntry" TextColor="Black" Text="{Binding Details}" Margin="0,5,0,10"/>
+                    <Label Text="Image:" TextColor="Black" FontSize="20"/>
+                    <Entry Placeholder="Entrez l'URL de l'image" x:Name="ImageEntry" TextColor="Black" Text="{Binding Image}"/>
+                    <Label Text="Code:" TextColor="Black" FontSize="20"/>
+                    <Entry Placeholder="Entrez le code de l'article" x:Name="CodeEntry" TextColor="Black" Text="{Binding Code}"/>
+                    <Label Text="Prix:"  TextColor="Black" FontSize="20" />
+                    <Entry Placeholder="Entrez le prix de l'article" x:Name="PrixEntry" TextColor="Black" Text="{Binding Prix}"/>
+                    <Label Text="Quantité:"  TextColor="Black" FontSize="20"/>
+                    <Entry Placeholder="Entrez la quantité de l'article" x:Name="QuantiteEntry" TextColor="Black" Text="{Binding Quantite}"/>
+                    <Button Text="Valider" x:Name="ValidateButton"  Command="{Binding SaveItem}" Grid.Row="6" Grid.ColumnSpan="2" />
+                </StackLayout>
+            </Border>
+        </StackLayout>
     </Grid>
 </ContentPage>

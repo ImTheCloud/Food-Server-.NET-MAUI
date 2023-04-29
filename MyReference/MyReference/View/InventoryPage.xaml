@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
+	xmlns:model="clr-namespace:MyReference.Model"
+    Title="Scanner un aliment"
+    x:DataType="viewmodel:InventoryViewModel"
+    x:Class="MyReference.InventoryPage"
+    x:Name="MyPage"
+    BackgroundImageSource="back.png">
+
+
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*" BackgroundColor="Grey">
+            <CollectionView ItemsSource="{Binding AllFoodList}" Grid.Row="1">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Food">
+                        <Grid Padding="10" ColumnDefinitions="500,*" >
+                            <Border HeightRequest="125">
+                                <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Grey">
+                                    <Image
+                                        Aspect="AspectFill"
+                                        HeightRequest="100"
+                                        Source="{Binding Image}"
+                                        WidthRequest="100" />
+                                    <VerticalStackLayout
+                                        VerticalOptions="Center"
+                                        Grid.Column="1"
+                                        Padding="10">
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Name : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Name}"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Code : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Code}"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Quantité : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Quantite}"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Details : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Details}"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label VerticalOptions="Center" Text="Prix : "/>
+                                            <Label VerticalOptions="Center" Text="{Binding Prix}"/>
+                                            <Label VerticalOptions="Center" Text="€"/>
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

@@ -57,6 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Raw\backgroundProduct.png" />
+	  <None Remove="Resources\Raw\backgroundShow.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -65,6 +70,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="View\AddProductPagexaml.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\InventoryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\ShowProductPage.xaml">

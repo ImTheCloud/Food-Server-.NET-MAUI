@@ -7,17 +7,43 @@
     Title="Scanner un aliment"
     x:DataType="viewmodel:ShowProductViewModel"
     x:Class="MyReference.ShowProductPage"
-    x:Name="MyPage">
+    x:Name="MyPage"
+    BackgroundImageSource="backgroundShow.png">
+
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Magasin" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
-            <MenuFlyoutItem Text="Ajouter un aliment" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShowProductViewModel}}, Path=GoToAddProductPageCommand}"
-                            CommandParameter="From Inventaire !"/>
+            <MenuFlyoutItem Text="Ajouter aliment" 
+                           Command="{Binding GoToPageWithParameter}"
+                            CommandParameter="AddProductPage"/>
+            <MenuFlyoutItem Text="Inventaire" 
+                            Command="{Binding GoToPageWithParameter}"
+                            CommandParameter="InventoryPage"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
     <ScrollView>
-        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,*" RowDefinitions="Auto,*" BackgroundColor="Grey">
+        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300">
+
+                <Entry Placeholder="Code bare ici" 
+          VerticalOptions="Center" 
+          HorizontalOptions="FillAndExpand" 
+          Text="{Binding Code}" 
+          BackgroundColor="White" 
+          TextColor="Black" 
+          HeightRequest="30" 
+          Margin="0,5,10,5"/>
+                <Button Text="Search" 
+           x:Name="SearchButton" 
+           Command="{Binding OnSearchButton}" 
+           TextColor="White" 
+           BackgroundColor="Black" 
+           CornerRadius="5" 
+           WidthRequest="80" 
+           HeightRequest="30" 
+           VerticalOptions="Center" 
+           Margin="10,5,0,5"/>
+            </StackLayout>
             <CollectionView ItemsSource="{Binding MyShownList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
@@ -62,5 +88,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
+
     </ScrollView>
 </ContentPage>

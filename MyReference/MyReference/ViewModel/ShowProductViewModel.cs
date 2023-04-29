@@ -1,3 +1,6 @@
+using CommunityToolkit.Mvvm.Input;
+using System.Windows.Input;
+
 namespace MyReference.ViewModel;
 
 public partial class ShowProductViewModel : BaseViewModel
@@ -12,6 +15,24 @@ public partial class ShowProductViewModel : BaseViewModel
 
     [ObservableProperty]
     public string monCode;
+
+
+    public string _code;
+    public string Code
+    {
+        get { return _code; }
+        set
+        {
+            if (_code != value)
+            {
+                _code = value;
+                OnPropertyChanged(nameof(Code));
+            }
+        }
+    }
+    public ICommand OnSearchButton => new Command(SearchingData);
+    public ICommand GoToPageWithParameter{ get; }
+
     public ShowProductViewModel()
     {
         this.MyDeviceOrientationService = new DeviceOrientationServices();
@@ -19,6 +40,7 @@ public partial class ShowProductViewModel : BaseViewModel
         MyDeviceOrientationService.ConfigureScanner();
 
         MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_changed;
+        GoToPageWithParameter = new Command<string>(async (id) => await GotoPageWithParameter(id));
     }
 
     private async void SerialBuffer_changed(object sender, EventArgs e)
@@ -42,27 +64,50 @@ public partial class ShowProductViewModel : BaseViewModel
         }
         if (!isFoodFound)
         {
-            //await GoToAddProductPage("nouveau produit");
+            await GotoPageWithParameter("AddProductPage");
         }
 
     }
 
-    [RelayCommand]
-    public async Task GoToAddProductPage(string data)
+
+    public async Task GotoPageWithParameter(string id)
     {
-        await Shell.Current.GoToAsync(nameof(AddProductPage), true, new Dictionary<string, object>
+        if (id == "AddProductPage")
         {
-            {"Databc", data }
-        });
+            await Shell.Current.GoToAsync(nameof(AddProductPage));
+        }
+        else if (id == "InventoryPage")
+        {
+            await Shell.Current.GoToAsync(nameof(InventoryPage));
+        }
     }
 
-    [RelayCommand]
-    public async Task GoToShowProductPage(string data)
+    public async void SearchingData()
     {
-        await Shell.Current.GoToAsync(nameof(ShowProductPage), true, new Dictionary<string, object>
+        string code = Code;
+        MyShownList.Clear();
+
+        bool isFoodFound = false;
+        foreach (Food stu in Globals.MyStaticList)
         {
-            {"Databc", data }
-        });
+            if (stu.Code == code)
+            {
+                MyShownList.Add(stu);
+                isFoodFound = true;
+            }
+
+
+
+        }
+        if (!isFoodFound)
+        {
+            await Application.Current.MainPage.DisplayAlert("Article Non trouvable", "Veuillez le rajouter dans la bdd", "OK");
+            await GotoPageWithParameter("AddProductPage");
+        }
+
+
+
+
     }
 
 

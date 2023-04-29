@@ -10,7 +10,7 @@
   
 
     <ShellContent
-        Shell.BackgroundColor="Gray"
+        Shell.BackgroundColor="DarkGoldenrod"
         ContentTemplate="{DataTemplate local:ShowProductPage}"
         Route="ShowProductPage"/>
 
