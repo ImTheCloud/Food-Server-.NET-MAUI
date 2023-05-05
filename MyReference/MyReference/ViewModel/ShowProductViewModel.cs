@@ -41,6 +41,7 @@ public partial class ShowProductViewModel : BaseViewModel
 
         MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_changed;
         GoToPageWithParameter = new Command<string>(async (id) => await GotoPageWithParameter(id));
+
     }
 
     private async void SerialBuffer_changed(object sender, EventArgs e)
