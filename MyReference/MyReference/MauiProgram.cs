@@ -23,8 +23,8 @@ public static class MauiProgram
         builder.Services.AddTransient<InventoryViewModel>();
         builder.Services.AddTransient<InventoryPage>();
 
-        builder.Services.AddTransient<UserViewModel>();
-        builder.Services.AddTransient<UserPage>();
+        builder.Services.AddSingleton<UserViewModel>();
+        builder.Services.AddSingleton<UserPage>();
 
 
         builder.Services.AddTransient<FoodService>();

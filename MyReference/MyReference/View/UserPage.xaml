@@ -16,17 +16,12 @@
         </Button>
 
 
-
-
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="Nom d'utilisateur"/>
-            <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry"/>
-            <Label Text="Mot de passe"/>
-            <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry"/>
-            <Button Text="Valider" Margin="10"/>
+            <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}" />
+            <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}" />
+            <Button Text="Valider" Margin="10" Command="{Binding validateButton}"/>
+            <Button Text="Connexion" Margin="10" Command="{Binding connexionButton}"/>
         </StackLayout>
-
-
 
         <CollectionView ItemsSource="{Binding ShownList}" SelectionMode="None">
             <CollectionView.ItemTemplate>

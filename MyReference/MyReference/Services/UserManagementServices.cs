@@ -63,5 +63,7 @@ public class UserManagementServices
         // DEFINI USERSET DANS GLOBALUSING
         Globals.UserSet.Tables["Users"].ParentRelations.Add(relation);
 
+
+      
     }
 }
