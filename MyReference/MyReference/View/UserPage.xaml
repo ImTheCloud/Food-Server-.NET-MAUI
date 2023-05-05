@@ -15,7 +15,20 @@
                 IsEnabled="{Binding IsNotBusy}">
         </Button>
 
-            <CollectionView ItemsSource="{Binding ShownList}" SelectionMode="None">
+
+
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Nom d'utilisateur"/>
+            <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry"/>
+            <Label Text="Mot de passe"/>
+            <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry"/>
+            <Button Text="Valider" Margin="10"/>
+        </StackLayout>
+
+
+
+        <CollectionView ItemsSource="{Binding ShownList}" SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:User">
                     <Border Grid.Column="0" Grid.ColumnSpan="3"
