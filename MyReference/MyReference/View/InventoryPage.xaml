@@ -8,17 +8,17 @@
     x:DataType="viewmodel:InventoryViewModel"
     x:Class="MyReference.InventoryPage"
     x:Name="MyPage"
-    BackgroundImageSource="back.png">
+    BackgroundImageSource="backgroundShow.png">
 
 
     <ScrollView>
-        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*" BackgroundColor="Grey">
+        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
             <CollectionView ItemsSource="{Binding AllFoodList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
                         <Grid Padding="10" ColumnDefinitions="500,*" >
                             <Border HeightRequest="125">
-                                <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Grey">
+                                <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Black">
                                     <Image
                                         Aspect="AspectFill"
                                         HeightRequest="100"

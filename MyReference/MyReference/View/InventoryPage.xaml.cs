@@ -1,4 +1,4 @@
-namespace MyReference.View;
+namespace MyReference;
 
 public partial class InventoryPage : ContentPage
 {
@@ -8,8 +8,5 @@ public partial class InventoryPage : ContentPage
 		BindingContext = viewmodel;
 	}
 
-    private void InitializeComponent()
-    {
-        throw new NotImplementedException();
-    }
+    
 }
