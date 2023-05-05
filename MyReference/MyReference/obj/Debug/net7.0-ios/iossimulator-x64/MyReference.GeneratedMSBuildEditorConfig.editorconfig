@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyReference.Resources.Styl
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/Services/UserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyReference.Services.UserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Services\UserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Services\UserPage.xaml
+
 [C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/AddProductPagexaml.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.AddProductPagexaml.xaml

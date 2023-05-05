@@ -12,22 +12,22 @@
 
 
     <ScrollView>
-        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+        <Grid BackgroundColor="#80000000" Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
             <CollectionView ItemsSource="{Binding AllFoodList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
-                        <Grid Padding="10" ColumnDefinitions="500,*" >
+                        <Grid Padding="10" ColumnDefinitions="500,*" BackgroundColor="#80000000">
                             <Border HeightRequest="125">
                                 <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Black">
                                     <Image
-                                        Aspect="AspectFill"
-                                        HeightRequest="100"
-                                        Source="{Binding Image}"
-                                        WidthRequest="100" />
+                                    Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    Source="{Binding Image}"
+                                    WidthRequest="100" />
                                     <VerticalStackLayout
-                                        VerticalOptions="Center"
-                                        Grid.Column="1"
-                                        Padding="10">
+                                    VerticalOptions="Center"
+                                    Grid.Column="1"
+                                    Padding="10">
                                         <HorizontalStackLayout>
                                             <Label VerticalOptions="Center" Text="Name : "/>
                                             <Label VerticalOptions="Center" Text="{Binding Name}"/>
@@ -57,6 +57,5 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
-
     </ScrollView>
 </ContentPage>
