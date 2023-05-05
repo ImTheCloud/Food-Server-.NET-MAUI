@@ -13,7 +13,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Services\UserPage.xaml">
+    <MauiXaml Update="View\UserPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="View\AddProductPagexaml.xaml">

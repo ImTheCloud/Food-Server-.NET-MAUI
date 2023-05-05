@@ -7,7 +7,8 @@ public partial class App : Application
 		InitializeComponent();
         LoadJson();
         MainPage = new AppShell();
-      
+
+        CreateUserTables MyUserTables = new();
 
     }
 
