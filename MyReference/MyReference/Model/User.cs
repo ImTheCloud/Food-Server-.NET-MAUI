@@ -1,6 +1,4 @@
 namespace MyReference.Model;
-
-
 	public class User
 	{
 		public Int16 User_ID { get; set; }

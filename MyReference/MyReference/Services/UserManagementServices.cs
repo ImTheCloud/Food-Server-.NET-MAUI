@@ -60,5 +60,8 @@ public class UserManagementServices
 
         DataRelation relation = new DataRelation("Acces2User",parentColumn,childColumn);
 
+        // DEFINI USERSET DANS GLOBALUSING
+        Globals.UserSet.Tables["Users"].ParentRelations.Add(relation);
+
     }
 }
