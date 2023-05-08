@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System.Windows.Input;
 
 namespace MyReference.ViewModel;
@@ -18,6 +19,7 @@ public partial class ShowProductViewModel : BaseViewModel
 
 
     public string _code;
+    public string barcodeData;
     public string Code
     {
         get { return _code; }
@@ -47,7 +49,7 @@ public partial class ShowProductViewModel : BaseViewModel
     private async void SerialBuffer_changed(object sender, EventArgs e)
     {
         DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
-        var barcodeData = myQueue.Dequeue().ToString();
+        barcodeData = myQueue.Dequeue().ToString();
 
         MyShownList.Clear();
 
@@ -85,13 +87,13 @@ public partial class ShowProductViewModel : BaseViewModel
 
     public async void SearchingData()
     {
-        string code = Code;
+        barcodeData = Code;
         MyShownList.Clear();
 
         bool isFoodFound = false;
         foreach (Food stu in Globals.MyStaticList)
         {
-            if (stu.Code == code)
+            if (stu.Code == barcodeData)
             {
                 MyShownList.Add(stu);
                 isFoodFound = true;

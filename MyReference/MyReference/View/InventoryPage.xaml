@@ -7,7 +7,7 @@
     Title="Scanner un aliment"
     x:DataType="viewmodel:InventoryViewModel"
     x:Class="MyReference.InventoryPage"
-    x:Name="MyPage"
+    x:Name="MyINVPage"
     BackgroundImageSource="backgroundShow.png">
 
 
@@ -50,12 +50,34 @@
                                             <Label VerticalOptions="Center" Text="€"/>
                                         </HorizontalStackLayout>
                                     </VerticalStackLayout>
+                                    <Button Text="Supprimer" Grid.Column="2" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" TextColor="White" BackgroundColor="Red" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyINVPage}}" CommandParameter="{Binding .}" />
                                 </Grid>
                             </Border>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300">
+
+                <Entry Placeholder="Code bare ici" 
+          VerticalOptions="Center" 
+          HorizontalOptions="FillAndExpand" 
+          Text="{Binding Code}" 
+          BackgroundColor="White" 
+          TextColor="Black" 
+          HeightRequest="30" 
+          Margin="0,5,10,5"/>
+                <Button Text="Search" 
+           x:Name="SearchButton" 
+           Command="{Binding OnSearchCommand}" 
+           TextColor="White" 
+           BackgroundColor="Black" 
+           CornerRadius="5" 
+           WidthRequest="80" 
+           HeightRequest="30" 
+           VerticalOptions="Center" 
+           Margin="10,5,0,5"/>
+            </StackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>

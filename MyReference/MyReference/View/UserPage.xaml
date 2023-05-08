@@ -7,11 +7,12 @@
 	xmlns:model="clr-namespace:MyReference.Model"
              x:DataType="viewmodel:UserViewModel"
              x:Name="myPage"
-             Title="UserPage">
+                 BackgroundImageSource="user.png"
+    Title="UserPage">
     <VerticalStackLayout>
 
         <Button Text="Fill from Database"
-               Command="{Binding onFillButton}"
+               Command="{Binding OnFillButton}"
                 IsEnabled="{Binding IsNotBusy}">
         </Button>
 
@@ -19,8 +20,8 @@
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}" />
             <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}" />
-            <Button Text="Valider" Margin="10" Command="{Binding validateButton}"/>
-            <Button Text="Connexion" Margin="10" Command="{Binding connexionButton}"/>
+            <Button Text="Valider" Margin="10" Command="{Binding ValidateButton}"/>
+            <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}"/>
         </StackLayout>
 
         <CollectionView ItemsSource="{Binding ShownList}" SelectionMode="None">

@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Windows.Input;
 
 namespace MyReference.ViewModel;
@@ -6,9 +7,9 @@ public partial class UserViewModel : BaseViewModel
 {
     public ObservableCollection<User> ShownList { get; set; } = new();
 
-    public ICommand onFillButton => new Command(Fill);
-    public ICommand validateButton => new Command(Fill);
-    public ICommand connexionButton => new Command(verifyConnexion);
+    public ICommand OnFillButton => new Command(Fill);
+    public ICommand ValidateButton => new Command(Fill);
+    public ICommand ConnexionButton => new Command(VerifyConnexion);
 
 
     public string _name;
@@ -79,7 +80,7 @@ public partial class UserViewModel : BaseViewModel
         IsBusy = false;
     }
 
-    public async void verifyConnexion()
+    public async void VerifyConnexion()
     {
      
         string name = Name;
@@ -89,6 +90,8 @@ public partial class UserViewModel : BaseViewModel
         foreach (var item in ShownList)
         {
             if(item.UserName == name && item.UserPassword == password) {
+
+                
                 await Shell.Current.GoToAsync(nameof(ShowProductPage));
             }
             else

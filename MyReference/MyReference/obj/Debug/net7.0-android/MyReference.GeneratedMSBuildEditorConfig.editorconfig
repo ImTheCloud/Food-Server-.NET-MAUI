@@ -12,51 +12,51 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = MyReference
-build_property.ProjectDir = C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\
+build_property.ProjectDir = C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/App.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/AppShell.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/Resources/Styles/Colors.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/Resources/Styles/Styles.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/AddProductPagexaml.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/View/AddProductPagexaml.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.AddProductPagexaml.xaml
 build_metadata.AdditionalFiles.TargetPath = View\AddProductPagexaml.xaml
 build_metadata.AdditionalFiles.RelativePath = View\AddProductPagexaml.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/InventoryPage.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/View/InventoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.InventoryPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\InventoryPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\InventoryPage.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/ShowProductPage.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/View/ShowProductPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.ShowProductPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\ShowProductPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\ShowProductPage.xaml
 
-[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/UserPage.xaml]
+[C:/Users/claud/OneDrive/Bureau/MyReference/MyReference/View/UserPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.UserPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\UserPage.xaml
