@@ -20,6 +20,7 @@
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221109.1",
           "Newtonsoft.Json": "13.0.3",
+          "System.Data.OleDb": "8.0.0-preview.3.23174.8",
           "System.IO.Ports": "8.0.0-preview.1.23110.8",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.2",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.52",
@@ -1065,6 +1066,53 @@
       },
       "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
       "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0-preview.1.23110.8": {},
+      "System.Configuration.ConfigurationManager/8.0.0-preview.3.23174.8": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0-preview.3.23174.8",
+          "System.Security.Cryptography.ProtectedData": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
+        }
+      },
+      "System.Data.OleDb/8.0.0-preview.3.23174.8": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0-preview.3.23174.8",
+          "System.Diagnostics.PerformanceCounter": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Data.OleDb.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/8.0.0-preview.3.23174.8": {
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/8.0.0-preview.3.23174.8": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
+        }
+      },
       "System.IO.Ports/8.0.0-preview.1.23110.8": {
         "dependencies": {
           "runtime.native.System.IO.Ports": "8.0.0-preview.1.23110.8"
@@ -1073,6 +1121,14 @@
           "runtimes/win/lib/net7.0/System.IO.Ports.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.11008"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-preview.3.23174.8": {
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
           }
         }
       }
@@ -1291,12 +1347,47 @@
       "path": "runtime.osx-x64.runtime.native.system.io.ports/8.0.0-preview.1.23110.8",
       "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
     },
+    "System.Configuration.ConfigurationManager/8.0.0-preview.3.23174.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-En9WhYr7LvybtgpVpxekwcvmebE9YUQTMOFxWgKBGpaMEdOWlEbO7P0A5uQW73p9iiTo5V4TQKS2qoF9RhLNkw==",
+      "path": "system.configuration.configurationmanager/8.0.0-preview.3.23174.8",
+      "hashPath": "system.configuration.configurationmanager.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
+    "System.Data.OleDb/8.0.0-preview.3.23174.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LZCr+tIS/QB8f76TUgLs2q/c77yfPgMulsCVKOwm3hrZP7pOCVvT3TJydM0HJoW2iAPD4Jfq+ZBm1dzkhXlLVg==",
+      "path": "system.data.oledb/8.0.0-preview.3.23174.8",
+      "hashPath": "system.data.oledb.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/8.0.0-preview.3.23174.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PqYrJ1kw4wvz4T+oGRbvWMr/8oV7CZRYSRZbowrkF2V8yq97L0r1rYpJwOqpzOk0bcTPyJbjTxOtWoCiRhKu/Q==",
+      "path": "system.diagnostics.eventlog/8.0.0-preview.3.23174.8",
+      "hashPath": "system.diagnostics.eventlog.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/8.0.0-preview.3.23174.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XKUHhBxlf8x8PrD6tUxZwSyPu4JqxBfpxY1mMGbmlGwWdbO7+1FvzfQyRyceXHa2XDfAY5qemvqF1WjPdUkP1w==",
+      "path": "system.diagnostics.performancecounter/8.0.0-preview.3.23174.8",
+      "hashPath": "system.diagnostics.performancecounter.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
     "System.IO.Ports/8.0.0-preview.1.23110.8": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-k5q8nbCf/MB0ucgpWHCCTO7Hm3htuGb8ASVT0qD7lPVyl6pCIgfjHw7L9462MjlO7+7sC5WFLLGKFjiLX+w7yQ==",
       "path": "system.io.ports/8.0.0-preview.1.23110.8",
       "hashPath": "system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-preview.3.23174.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RpFC2Vb5bCUOJP1IXBdqvFiW/drXP8YwuC/VGDZaG9sgnkvuhDJ2OkU9iLK5DOkdIIgvUx/lYQtMDApnFxXv1w==",
+      "path": "system.security.cryptography.protecteddata/8.0.0-preview.3.23174.8",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0-preview.3.23174.8.nupkg.sha512"
     }
   },
   "runtimes": {

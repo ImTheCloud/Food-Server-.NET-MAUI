@@ -1,3 +1,4 @@
+global using System.Data.OleDb;
 global using MyReference.View;
 global using MyReference.ViewModel;
 global using MyReference.Model;
@@ -5,8 +6,6 @@ global using MyReference.Services;
 global using System.Data;
 global using CommunityToolkit.Mvvm.Input;
 global using CommunityToolkit.Mvvm.ComponentModel;
-
-
 global using System.Diagnostics;
 global using System.Collections.ObjectModel;
 global using System.ComponentModel;

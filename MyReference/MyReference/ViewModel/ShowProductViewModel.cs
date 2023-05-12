@@ -2,6 +2,7 @@ using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System.Windows.Input;
 
+
 namespace MyReference.ViewModel;
 
 public partial class ShowProductViewModel : BaseViewModel

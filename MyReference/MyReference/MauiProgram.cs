@@ -25,6 +25,9 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<UserViewModel>();
         builder.Services.AddSingleton<UserPage>();
+        builder.Services.AddTransient<CreateUserTables>();
+        builder.Services.AddTransient<UserManagementServices>();
+
 
 
         builder.Services.AddTransient<FoodService>();

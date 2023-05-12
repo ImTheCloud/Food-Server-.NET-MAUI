@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-12T11:28:39.577</Modified>
+      <Modified>2023-05-12T12:15:01.811</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-12T11:28:39.047</Modified>
+      <Modified>2023-05-12T12:15:01.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.runtimeconfig.json">
       <PackagePath>MyReference.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-12T11:28:38.699</Modified>
+      <Modified>2023-05-12T11:38:31.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.dll">
       <PackagePath>MyReference.dll</PackagePath>
-      <Modified>2023-05-12T11:28:36.696</Modified>
+      <Modified>2023-05-12T12:15:00.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyReference.exe</PackagePath>
-      <Modified>2023-05-12T11:28:36.732</Modified>
+      <Modified>2023-05-12T12:15:00.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.2\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -929,9 +929,33 @@
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2023-03-08T07:09:54.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.configuration.configurationmanager\8.0.0-preview.3.23174.8\lib\net7.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2023-03-24T19:57:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.data.oledb\8.0.0-preview.3.23174.8\runtimes\win\lib\net7.0\System.Data.OleDb.dll">
+      <PackagePath>System.Data.OleDb.dll</PackagePath>
+      <Modified>2023-03-24T19:58:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.diagnostics.eventlog\8.0.0-preview.3.23174.8\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll">
+      <PackagePath>System.Diagnostics.EventLog.Messages.dll</PackagePath>
+      <Modified>2023-03-24T19:46:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.diagnostics.eventlog\8.0.0-preview.3.23174.8\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>System.Diagnostics.EventLog.dll</PackagePath>
+      <Modified>2023-03-24T19:54:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.diagnostics.performancecounter\8.0.0-preview.3.23174.8\runtimes\win\lib\net7.0\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>System.Diagnostics.PerformanceCounter.dll</PackagePath>
+      <Modified>2023-03-24T19:57:50.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.io.ports\8.0.0-preview.1.23110.8\runtimes\win\lib\net7.0\System.IO.Ports.dll">
       <PackagePath>System.IO.Ports.dll</PackagePath>
       <Modified>2023-02-10T21:32:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\system.security.cryptography.protecteddata\8.0.0-preview.3.23174.8\lib\net7.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2023-03-24T19:56:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -943,7 +967,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MyReference.deps.json">
       <PackagePath>MyReference.deps.json</PackagePath>
-      <Modified>2023-05-12T11:28:39.336</Modified>
+      <Modified>2023-05-12T12:15:01.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

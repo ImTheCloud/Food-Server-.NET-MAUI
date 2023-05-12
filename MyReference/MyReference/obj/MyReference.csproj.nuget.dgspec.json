@@ -83,6 +83,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -197,6 +201,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
             },
             "System.IO.Ports": {
               "target": "Package",
@@ -328,6 +336,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -418,6 +430,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
             },
             "System.IO.Ports": {
               "target": "Package",

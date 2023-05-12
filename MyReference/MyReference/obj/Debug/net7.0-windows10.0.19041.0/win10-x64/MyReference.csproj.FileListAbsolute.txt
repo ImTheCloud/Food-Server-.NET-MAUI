@@ -1658,3 +1658,9 @@ C:\Users\Bartek\Downloads\Project-Plateforme-net-C-main (1)\Project-Plateforme-n
 C:\Users\Bartek\Downloads\Project-Plateforme-net-C-main (1)\Project-Plateforme-net-C-main\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Bartek\Downloads\Project-Plateforme-net-C-main (1)\Project-Plateforme-net-C-main\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Bartek\Downloads\Project-Plateforme-net-C-main (1)\Project-Plateforme-net-C-main\MyReference\MyReference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Configuration.ConfigurationManager.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Data.OleDb.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.Messages.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.PerformanceCounter.dll
+C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.ProtectedData.dll
