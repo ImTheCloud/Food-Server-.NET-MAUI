@@ -4,7 +4,16 @@ using System.Windows.Input;
 namespace MyReference.ViewModel;
 
 public partial class UserViewModel : BaseViewModel
+
 {
+
+    UserManagementServices MyDBServices;
+    public UserViewModel(UserManagementServices myDBServices)
+    {
+        this.MyDBServices = myDBServices;
+        myDBServices.ConfigTools();
+    }
+
     public ObservableCollection<User> ShownList { get; set; } = new();
 
     public ICommand OnFillButton => new Command(Fill);

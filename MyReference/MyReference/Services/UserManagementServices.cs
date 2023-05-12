@@ -1,7 +1,7 @@
 namespace MyReference.Services;
 
 
-public class UserManagementServices
+public partial class UserManagementServices
 {
 }
 
