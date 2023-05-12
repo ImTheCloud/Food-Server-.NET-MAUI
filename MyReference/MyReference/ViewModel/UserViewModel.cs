@@ -39,23 +39,6 @@ public partial class UserViewModel : BaseViewModel
 
         List<User> MyList = new();
 
-
-
-        string name = Name;
-        string password = Password;
-
-        var addUserItem = new User
-        {
-            User_ID = 10,
-            UserName = name,
-            UserPassword = password,
-            UserAccesType = 3
-        };
-
-
-
-        ShownList.Add(addUserItem);
-
         try
         {
             MyList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(e => new User()
