@@ -71,6 +71,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Platforms\MacCatalyst\UserManagementServices.cs">
+	    <ExcludeFromCurrentConfiguration>true</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="View\UserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

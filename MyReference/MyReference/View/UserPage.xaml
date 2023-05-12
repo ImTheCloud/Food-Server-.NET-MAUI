@@ -11,16 +11,15 @@
     Title="UserPage">
     <VerticalStackLayout>
 
-        <Button Text="Fill from Database"
-               Command="{Binding OnFillButton}"
-                IsEnabled="{Binding IsNotBusy}">
-        </Button>
-
 
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}" />
             <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}" />
-            <Button Text="Valider" Margin="10" Command="{Binding ValidateButton}"/>
+
+            <Button Text="Fill" Margin="10" Command="{Binding OnFillButton}"/>
+            <Button Text="Insert" Margin="10" Command="{Binding OnInsertButton}"/>
+            <Button Text="Update" Margin="10" Command="{Binding OnUpdateButton}"/>
+            <Button Text="Delete" Margin="10" Command="{Binding OnDeleteButton}"/>
             <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}"/>
         </StackLayout>
 
@@ -31,6 +30,8 @@
                                 StrokeThickness="4"
                                 StrokeShape="RoundRectangle 10,10,10,10">
                         <VerticalStackLayout>
+                            
+                            
                                 <Label Text="{Binding User_ID}" TextColor="Black" />
                             <Label Text="{Binding UserName}"  TextColor="Black" />
                             <Label Text="{Binding UserPassword}" TextColor="Black" />

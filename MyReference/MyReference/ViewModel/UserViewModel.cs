@@ -11,13 +11,18 @@ public partial class UserViewModel : BaseViewModel
     public UserViewModel(UserManagementServices myDBServices)
     {
         this.MyDBServices = myDBServices;
-        myDBServices.ConfigTools();
+        MyDBServices.ConfigTools();
     }
 
     public ObservableCollection<User> ShownList { get; set; } = new();
 
     public ICommand OnFillButton => new Command(Fill);
-    public ICommand ValidateButton => new Command(Fill);
+    public ICommand OnDeleteButton => new Command(Delete);
+
+    public ICommand OnUpdateButton => new Command(Update);
+
+    public ICommand OnInsertButton => new Command(Insert);
+
     public ICommand ConnexionButton => new Command(VerifyConnexion);
 
 
@@ -41,6 +46,59 @@ public partial class UserViewModel : BaseViewModel
         }
     }
 
+    public async void Delete()
+    {
+        IsBusy = true;
+        string name = Name;
+
+        try
+        {
+             MyDBServices.DeleteIntoDB(name);
+
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+        }
+        IsBusy = false;
+
+    }
+
+    public async void Update()
+    {
+        IsBusy = true;
+
+
+        try
+        {
+             MyDBServices.UpdateDB();
+
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+        }
+        IsBusy = false;
+    }
+    public async void Insert()
+    {
+        IsBusy = true;
+
+
+        string name = Name;
+        string password = Password;
+        try
+        {
+             MyDBServices.insertIntoDB(name, password,3);
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+        }
+        IsBusy = false;
+
+    }
+
 
     public async void Fill()
     {
@@ -48,18 +106,21 @@ public partial class UserViewModel : BaseViewModel
 
         List<User> MyList = new();
 
-     //   string name = Name;
-      //  string password = Password;
+      
+        if (Globals.UserSet.Tables["Access"].Rows.Count == 0)
+        {
+             MyDBServices.ReadFromDB();
 
-      //  var addUserItem = new User
-     //   {
-      //      User_ID = 10,
-      //      UserName = name,
-      //      UserPassword = password,
-      //      UserAccesType = 3
-      //  };
+        }
+        if (Globals.UserSet.Tables["Access"].Rows.Count != 0)
+        {
+            Globals.UserSet.Tables.Clear();
 
-        ShownList.Add(addUserItem);
+        }
+
+        
+
+         MyDBServices.FillUsersFromDB();
 
         try
         {
@@ -76,6 +137,7 @@ public partial class UserViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
         }
+        ShownList.Clear();
 
         foreach (var item in MyList)
         {
