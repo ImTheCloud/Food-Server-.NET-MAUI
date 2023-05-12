@@ -2,17 +2,17 @@
 
 namespace MyReference.Services;
 
-    public partial class UserManagementService
-    {
-         OleDbConnection Connexion = new();
-         OleDbDataAdapter UserAdapter = new();
+public partial class UserManagementServices
+{
+    OleDbConnection Connexion = new();
+    OleDbDataAdapter UserAdapter = new();
 
-        internal void ConfigTools()
-        {
-            Connexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;"
-                                        + @"Data Source= "
-                                        + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "QualityServer", "UserAccounts.accdb")
-                                        +";Persist Security Info=false";
+    internal void ConfigTools()
+    {
+        Connexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;"
+                                    + @"Data Source= "
+                                    + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "QualityServer", "UserAccounts.accdb")
+                                    + ";Persist Security Info=false";
 
         string DeleteCommandeTxt = "DELETE FROM DB_Users(UserName,UserPassword,UserAccesType) WHERE UserName=@UserName";
         string UpdateCommandeTxt = "UPDATE DB_Users SET UserName=@UserName, UserPassword=@UserPassword, UserAccesType=@UserAccesType WHERE UserName=@UserName";
@@ -25,10 +25,10 @@ namespace MyReference.Services;
         OleDbCommand InsertCommand = new OleDbCommand(InsertCommandeTxt, Connexion);
         OleDbCommand SelectCommand = new OleDbCommand(SelectCommandeTxt, Connexion);
 
-        UserAdapter.DeleteCommand= DeleteCommand;
-        UserAdapter.UpdateCommand= UpdateCommand;
-        UserAdapter.InsertCommand= InsertCommand;
-        UserAdapter.SelectCommand= SelectCommand;
+        UserAdapter.DeleteCommand = DeleteCommand;
+        UserAdapter.UpdateCommand = UpdateCommand;
+        UserAdapter.InsertCommand = InsertCommand;
+        UserAdapter.SelectCommand = SelectCommand;
 
         UserAdapter.InsertCommand.Parameters.Add("@UserName", OleDbType.VarChar, 40, "UserName");
         UserAdapter.InsertCommand.Parameters.Add("@UserPassword", OleDbType.VarChar, 40, "UserPassword");
@@ -40,5 +40,5 @@ namespace MyReference.Services;
 
 
     }
-    }
+}
 
