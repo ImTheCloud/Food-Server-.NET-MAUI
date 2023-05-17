@@ -118,8 +118,7 @@ public partial class UserViewModel : BaseViewModel
 
         }
 
-        
-
+  
          MyDBServices.FillUsersFromDB();
 
         try

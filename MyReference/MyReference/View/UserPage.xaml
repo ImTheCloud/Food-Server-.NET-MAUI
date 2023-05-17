@@ -1,20 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyReference.UserPage"
-	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
-	xmlns:model="clr-namespace:MyReference.Model"
-             x:DataType="viewmodel:UserViewModel"
-             x:Name="myPage"
-                 BackgroundImageSource="user.png"
-    Title="UserPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:model="clr-namespace:MyReference.Model" xmlns:viewmodel="clr-namespace:MyReference.ViewModel" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MyReference.UserPage" x:DataType="viewmodel:UserViewModel" x:Name="myPage" BackgroundImageSource="user.png" Title="UserPage">
     <VerticalStackLayout>
-
-
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout BackgroundColor="#E8E8E8" Padding="20" Spacing="10">
-                <Entry Placeholder="Entrez votre nom d'utilisateur" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}">
+                <Entry Placeholder="Entrez votre nom" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}">
                     <Entry.Resources>
                         <Style TargetType="Entry">
                             <Setter Property="BackgroundColor" Value="#F2F2F2" />
@@ -24,11 +13,12 @@
                             <Setter Property="Margin" Value="10" />
                             <Setter Property="FontSize" Value="16" />
                             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                            <Setter Property="WidthRequest" Value="200" />
                         </Style>
                     </Entry.Resources>
                 </Entry>
-
-                <Entry Placeholder="Entrez votre mot de passe" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}">
+                <Entry Placeholder="Entrez votre code" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}">
                     <Entry.Resources>
                         <Style TargetType="Entry">
                             <Setter Property="BackgroundColor" Value="#F2F2F2" />
@@ -38,31 +28,25 @@
                             <Setter Property="Margin" Value="10" />
                             <Setter Property="FontSize" Value="16" />
                             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                            <Setter Property="WidthRequest" Value="200" />
                         </Style>
                     </Entry.Resources>
                 </Entry>
-
-            <Button Text="Fill" Margin="10" Command="{Binding OnFillButton}"/>
-            <Button Text="Insert" Margin="10" Command="{Binding OnInsertButton}"/>
-            <Button Text="Update" Margin="10" Command="{Binding OnUpdateButton}"/>
-            <Button Text="Delete" Margin="10" Command="{Binding OnDeleteButton}"/>
-            <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}"/>
+                <Button Text="Fill" Margin="10" Command="{Binding OnFillButton}" />
+                <Button Text="Insert" Margin="10" Command="{Binding OnInsertButton}" />
+                <Button Text="Update" Margin="10" Command="{Binding OnUpdateButton}" />
+                <Button Text="Delete" Margin="10" Command="{Binding OnDeleteButton}" />
+                <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}" />
+            </StackLayout>
         </StackLayout>
-        </StackLayout>
-
-
-
         <CollectionView ItemsSource="{Binding ShownList}" SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:User">
-                    <Border Grid.Column="0" Grid.ColumnSpan="3"
-                                StrokeThickness="4"
-                                StrokeShape="RoundRectangle 10,10,10,10">
+                    <Border Grid.Column="0" Grid.ColumnSpan="3" StrokeThickness="4" StrokeShape="RoundRectangle 10,10,10,10">
                         <VerticalStackLayout>
-                            
-                            
-                                <Label Text="{Binding User_ID}" TextColor="Black" />
-                            <Label Text="{Binding UserName}"  TextColor="Black" />
+                            <Label Text="{Binding User_ID}" TextColor="Black" />
+                            <Label Text="{Binding UserName}" TextColor="Black" />
                             <Label Text="{Binding UserPassword}" TextColor="Black" />
                             <Label Text="{Binding UserAccesType}" TextColor="Black" />
                         </VerticalStackLayout>
