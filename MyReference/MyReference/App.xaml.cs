@@ -7,8 +7,48 @@ public partial class App : Application
 		InitializeComponent();
         LoadJson();
         MainPage = new AppShell();
-
         CreateUserTables MyUserTables = new();
+
+
+       
+        importAllUsersFromDB();
+    }
+
+    public async void importAllUsersFromDB()
+    {
+        UserManagementServices MyDBServices = new();
+        MyDBServices.ConfigTools();
+
+
+        if (Globals.UserSet.Tables["Access"].Rows.Count == 0)
+        {
+            MyDBServices.ReadFromDB();
+
+        }
+        if (Globals.UserSet.Tables["Access"].Rows.Count != 0)
+        {
+            Globals.UserSet.Tables["Access"].Clear();
+
+        }
+
+
+        MyDBServices.FillUsersFromDB();
+
+        try
+        {
+            Globals.UserList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(e => new User()
+            {
+
+                User_ID = e.Field<Int16>("User_ID"),
+                UserName = e.Field<string>("UserName"),
+                UserPassword = e.Field<string>("UserPassword"),
+                UserAccessType = e.Field<Int16>("UserAccessType"),
+            }).ToList();
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+        }
 
     }
 

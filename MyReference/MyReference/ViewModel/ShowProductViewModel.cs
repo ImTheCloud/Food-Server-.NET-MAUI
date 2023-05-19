@@ -33,7 +33,6 @@ public partial class ShowProductViewModel : BaseViewModel
             }
         }
     }
-    public ICommand OnSearchButton => new Command(SearchingData);
     public ICommand GoToPageWithParameter{ get; }
 
     public ShowProductViewModel()
@@ -76,25 +75,30 @@ public partial class ShowProductViewModel : BaseViewModel
 
     public async Task GotoPageWithParameter(string id)
     {
-        if (id == "AddProductPage")
+        if (id == "AddProductPage" && Globals.isAdmin == true)
         {
             await Shell.Current.GoToAsync(nameof(AddProductPage));
         }
-        else if (id == "InventoryPage")
+        else if (id == "InventoryPage" && Globals.isAdmin == true)
         {
             await Shell.Current.GoToAsync(nameof(InventoryPage));
         }
+        else
+        {
+            await Application.Current.MainPage.DisplayAlert("Administrateur", "Seul les Administrateurs ont acces à cette séssion", "OK");
+
+        }
     }
 
-    public async void SearchingData()
+    [RelayCommand]
+    public async void SearchingData(string code)
     {
-        barcodeData = Code;
         MyShownList.Clear();
 
         bool isFoodFound = false;
         foreach (Food stu in Globals.MyStaticList)
         {
-            if (stu.Code == barcodeData)
+            if (stu.Code == code)
             {
                 MyShownList.Add(stu);
                 isFoodFound = true;
@@ -106,7 +110,11 @@ public partial class ShowProductViewModel : BaseViewModel
         if (!isFoodFound)
         {
             await Application.Current.MainPage.DisplayAlert("Article Non trouvable", "Veuillez le rajouter dans la bdd", "OK");
-            await GotoPageWithParameter("AddProductPage");
+            
+            await Shell.Current.GoToAsync("AddProductPage",true , new Dictionary<string, object>
+            {
+                {"Databc",code }
+            });
         }
 
 

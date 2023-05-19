@@ -149,7 +149,7 @@ public partial class UserManagementServices
         {
             Connexion.Open();
 
-            int buffer = Users_Adapter.Update(Globals.UserSet.Tables["Users"]); // a verifier
+            int buffer = Users_Adapter.Update(Globals.UserSet.Tables["Users"]); 
 
             if (buffer != 0)
             {

@@ -23,6 +23,8 @@ public class Globals
 
 
     public static DataSet UserSet = new();
+    public static List<User> UserList = new();
+    public static Boolean isAdmin = false;
 
 
 }

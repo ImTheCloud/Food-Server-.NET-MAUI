@@ -10,7 +10,7 @@
         <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
             <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300">
                 <Entry Placeholder="Code bare ici" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="{Binding Code}" BackgroundColor="White" TextColor="Black" HeightRequest="30" Margin="0,5,10,5" />
-                <Button Text="Search" x:Name="SearchButton" Command="{Binding OnSearchButton}" TextColor="White" BackgroundColor="Black" CornerRadius="5" WidthRequest="80" HeightRequest="30" VerticalOptions="Center" Margin="10,5,0,5" />
+                <Button Text="Search" x:Name="SearchButton" Command="{Binding SearchingDataCommand}" CommandParameter="{Binding Code}" TextColor="White" BackgroundColor="Black" CornerRadius="5" WidthRequest="80" HeightRequest="30" VerticalOptions="Center" Margin="10,5,0,5" />
             </StackLayout>
             <CollectionView ItemsSource="{Binding MyShownList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>

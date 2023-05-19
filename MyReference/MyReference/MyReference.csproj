@@ -74,13 +74,16 @@
 	  <Compile Update="Platforms\MacCatalyst\UserManagementServices.cs">
 	    <ExcludeFromCurrentConfiguration>true</ExcludeFromCurrentConfiguration>
 	  </Compile>
+	  <Compile Update="View\AddProductPage.xaml.cs">
+	    <DependentUpon>AddProductPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="View\UserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\AddProductPagexaml.xaml">
+	  <MauiXaml Update="View\AddProductPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\InventoryPage.xaml">

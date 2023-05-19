@@ -16,7 +16,6 @@ public partial class UserViewModel : BaseViewModel
 
     public ObservableCollection<User> ShownList { get; set; } = new();
 
-    public ICommand OnFillButton => new Command(Fill);
     public ICommand OnDeleteButton => new Command(Delete);
 
     public ICommand OnUpdateButton => new Command(Update);
@@ -78,6 +77,8 @@ public partial class UserViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
         }
+
+  
         IsBusy = false;
     }
     public async void Insert()
@@ -95,21 +96,52 @@ public partial class UserViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
         }
+        newFill();
         IsBusy = false;
-
+       
     }
 
-
-    public async void Fill()
+    public async void VerifyConnexion()
     {
-        IsBusy = true;
+     
+        string name = Name;
+        string password = Password;
+        //await Shell.Current.GoToAsync(nameof(ShowProductPage));
+        Boolean isCorrect = false;
 
-        List<User> MyList = new();
 
-      
+        foreach (var item in Globals.UserList)
+        {
+            if(item.UserName == name && item.UserPassword == password) {
+                isCorrect = true;
+                if(item.UserAccessType== 1)
+                {
+                    Globals.isAdmin = true;
+                }
+                await Shell.Current.GoToAsync(nameof(ShowProductPage));
+            }
+
+            
+        }
+
+        if (!isCorrect)
+        {
+
+            await Application.Current.MainPage.DisplayAlert("Connexion Failed", "le mot de passe ou le nom est incorrect", "OK");
+        }
+
+
+    }
+    public async void newFill()
+    {
+        UserManagementServices MyDBServices = new();
+        MyDBServices.ConfigTools();
+
+        Globals.UserList.Clear();
+
         if (Globals.UserSet.Tables["Access"].Rows.Count == 0)
         {
-             MyDBServices.ReadFromDB();
+            MyDBServices.ReadFromDB();
 
         }
         if (Globals.UserSet.Tables["Access"].Rows.Count != 0)
@@ -118,12 +150,12 @@ public partial class UserViewModel : BaseViewModel
 
         }
 
-  
-         MyDBServices.FillUsersFromDB();
+
+        MyDBServices.FillUsersFromDB();
 
         try
         {
-            MyList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(e => new User()
+            Globals.UserList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(e => new User()
             {
 
                 User_ID = e.Field<Int16>("User_ID"),
@@ -136,35 +168,7 @@ public partial class UserViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
         }
-        ShownList.Clear();
 
-        foreach (var item in MyList)
-        {
-            ShownList.Add(item);
-        }
-
-        IsBusy = false;
     }
 
-    public async void VerifyConnexion()
-    {
-     
-        string name = Name;
-        string password = Password;
-        //await Shell.Current.GoToAsync(nameof(ShowProductPage));
-
-
-        foreach (var item in ShownList)
-        {
-            if(item.UserName == name && item.UserPassword == password) {
-
-             
-                await Shell.Current.GoToAsync(nameof(ShowProductPage));
-            }
-            else
-            {
-                await Application.Current.MainPage.DisplayAlert("Connexion Failed", "le mot de passe ou le nom est incorrect", "OK");
-            }
-        }
-    }
 }
