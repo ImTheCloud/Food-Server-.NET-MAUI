@@ -32,6 +32,9 @@ public partial class ShowProductViewModel : BaseViewModel
                 OnPropertyChanged(nameof(Code));
             }
         }
+
+
+
     }
     public ICommand GoToPageWithParameter{ get; }
 

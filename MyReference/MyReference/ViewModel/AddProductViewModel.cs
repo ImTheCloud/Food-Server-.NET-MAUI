@@ -2,11 +2,11 @@ using System.Windows.Input;
 
 namespace MyReference.ViewModel;
 
-[QueryProperty(nameof(MonTxt), "Databc")]
+[QueryProperty(nameof(Code), "Databc")]
 public partial class AddProductViewModel : BaseViewModel
 {
     [ObservableProperty]
-    string monTxt;
+    string code;
     public AddProductViewModel()
     {
 
@@ -58,19 +58,6 @@ public partial class AddProductViewModel : BaseViewModel
             if (_image != value)
             {
                 _image= value; OnPropertyChanged(nameof(Image));
-            }
-        }
-    }
-
-    public string Code
-    {
-        get { return _code; }
-        set
-        {
-            if (_code != value)
-            {
-                _code= value; OnPropertyChanged(nameof(Code));  
-
             }
         }
     }

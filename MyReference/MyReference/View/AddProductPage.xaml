@@ -18,7 +18,7 @@
                     <Label Text="Image:" TextColor="Black" FontSize="20"/>
                     <Entry Placeholder="Entrez l'URL de l'image" x:Name="ImageEntry" TextColor="Black" Text="{Binding Image}"/>
                     <Label Text="Code:" TextColor="Black" FontSize="20"/>
-                    <Entry Placeholder="Entrez le code de l'article" x:Name="CodeEntry" TextColor="Black" Text="{Binding MonTxt}"/>
+                    <Entry Placeholder="Entrez le code de l'article" x:Name="CodeEntry" TextColor="Black" Text="{Binding Code}"/>
                     <Label Text="Prix:"  TextColor="Black" FontSize="20" />
                     <Entry Placeholder="Entrez le prix de l'article" x:Name="PrixEntry" TextColor="Black" Text="{Binding Prix}"/>
                     <Label Text="Quantité:"  TextColor="Black" FontSize="20"/>
