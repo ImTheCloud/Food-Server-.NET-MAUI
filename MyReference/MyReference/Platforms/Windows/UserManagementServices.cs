@@ -4,8 +4,8 @@ namespace MyReference.Services;
 
 public partial class UserManagementServices
 {
-    public OleDbConnection Connexion = new();
-    public OleDbDataAdapter Users_Adapter = new();
+    internal OleDbConnection Connexion = new();
+    internal OleDbDataAdapter Users_Adapter = new();
 
     internal void ConfigTools()
     {
@@ -60,7 +60,7 @@ public partial class UserManagementServices
 
     internal async void ReadFromDB()
     {
-        OleDbCommand SelectCommand = new OleDbCommand("SELECT * FROM DB_Access;", Connexion);
+        OleDbCommand SelectCommand = new OleDbCommand("SELECT * from DB_Access;", Connexion);
 
         try
         {
@@ -70,7 +70,7 @@ public partial class UserManagementServices
             {
                 while (reader.Read())
                 {
-                    Globals.UserSet.Tables["Acces"].Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
+                    Globals.UserSet.Tables["Access"].Rows.Add(reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
                 }
             }
             reader.Close();
@@ -85,14 +85,14 @@ public partial class UserManagementServices
         }
     }
 
-    internal async void insertIntoDB(string name, string pass, Int32 acces)
+    internal async void insertIntoDB(string name, string pass, Int32 access)
     {
         try
         {
             Connexion.Open();
             Users_Adapter.InsertCommand.Parameters[0].Value = name;
             Users_Adapter.InsertCommand.Parameters[1].Value = pass;
-            Users_Adapter.InsertCommand.Parameters[2].Value = acces;
+            Users_Adapter.InsertCommand.Parameters[2].Value = access;
 
             int buffer = Users_Adapter.InsertCommand.ExecuteNonQuery();
 
@@ -117,11 +117,11 @@ public partial class UserManagementServices
 
     internal async void DeleteIntoDB(string name)
     {
+        Users_Adapter.DeleteCommand.Parameters[0].Value = name;
+
         try
         {
             Connexion.Open();
-            Users_Adapter.InsertCommand.Parameters[0].Value = name;
-
             int buffer = Users_Adapter.DeleteCommand.ExecuteNonQuery();
 
             if (buffer != 0)
@@ -149,7 +149,7 @@ public partial class UserManagementServices
         {
             Connexion.Open();
 
-            int buffer = Users_Adapter.Update(Globals.UserSet.Tables["Users"]);
+            int buffer = Users_Adapter.Update(Globals.UserSet.Tables["Users"]); // a verifier
 
             if (buffer != 0)
             {

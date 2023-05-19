@@ -114,7 +114,7 @@ public partial class UserViewModel : BaseViewModel
         }
         if (Globals.UserSet.Tables["Access"].Rows.Count != 0)
         {
-            Globals.UserSet.Tables.Clear();
+            Globals.UserSet.Tables["Access"].Clear();
 
         }
 
@@ -129,7 +129,7 @@ public partial class UserViewModel : BaseViewModel
                 User_ID = e.Field<Int16>("User_ID"),
                 UserName = e.Field<string>("UserName"),
                 UserPassword = e.Field<string>("UserPassword"),
-                UserAccesType = e.Field<Int16>("UserAccesType"),
+                UserAccessType = e.Field<Int16>("UserAccessType"),
             }).ToList();
         }
         catch (Exception ex)
@@ -151,13 +151,14 @@ public partial class UserViewModel : BaseViewModel
      
         string name = Name;
         string password = Password;
+        //await Shell.Current.GoToAsync(nameof(ShowProductPage));
 
- 
+
         foreach (var item in ShownList)
         {
             if(item.UserName == name && item.UserPassword == password) {
 
-                
+             
                 await Shell.Current.GoToAsync(nameof(ShowProductPage));
             }
             else

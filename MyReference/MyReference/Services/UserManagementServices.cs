@@ -10,15 +10,15 @@ public partial class UserManagementServices
     public CreateUserTables() 
     {
         DataTable UserTable = new();
-        DataTable AccesTable= new();
+        DataTable AccessTable= new();
 
         DataColumn User_ID             = new DataColumn("User_ID",System.Type.GetType("System.Int16"));
         DataColumn UserName            = new DataColumn("UserName", System.Type.GetType("System.String"));
         DataColumn UserPassword        = new DataColumn("UserPassword", System.Type.GetType("System.String"));
-        DataColumn AccesType           = new DataColumn("UserAccesType", System.Type.GetType("System.Int16"));
+        DataColumn AccessType           = new DataColumn("UserAccessType", System.Type.GetType("System.Int16"));
 
-        DataColumn Acces_ID            = new DataColumn("Acces_ID", System.Type.GetType("System.Int16"));
-        DataColumn AccesName           = new DataColumn("AccesName", System.Type.GetType("System.String"));
+        DataColumn Access_ID            = new DataColumn("Access_ID", System.Type.GetType("System.Int16"));
+        DataColumn AccessName           = new DataColumn("AccessName", System.Type.GetType("System.String"));
         DataColumn CreateObject        = new DataColumn("CreateObject", System.Type.GetType("System.Boolean"));
         DataColumn DestroyObject       = new DataColumn("DestroyObject", System.Type.GetType("System.Boolean"));
         DataColumn ModifyObject        = new DataColumn("ModifyObject", System.Type.GetType("System.Boolean"));
@@ -34,31 +34,31 @@ public partial class UserManagementServices
         UserTable.Columns.Add(UserName);
 
         UserTable.Columns.Add(UserPassword);
-        UserTable.Columns.Add(AccesType);
+        UserTable.Columns.Add(AccessType);
 
 
         //AccesTable
-        AccesTable.TableName = "Acces";
+        AccessTable.TableName = "Access";
 
-        Acces_ID.AutoIncrement = true;
-        Acces_ID.Unique = true;
-        AccesTable.Columns.Add(Acces_ID);
+        Access_ID.AutoIncrement = true;
+        Access_ID.Unique = true;
+        AccessTable.Columns.Add(Access_ID);
 
-        AccesName.Unique = true;
-        AccesTable.Columns.Add(AccesName);
+        AccessName.Unique = true;
+        AccessTable.Columns.Add(AccessName);
 
-        AccesTable.Columns.Add(CreateObject);
-        AccesTable.Columns.Add(DestroyObject);
-        AccesTable.Columns.Add(ModifyObject);
-        AccesTable.Columns.Add(ChangeUserRights);
+        AccessTable.Columns.Add(CreateObject);
+        AccessTable.Columns.Add(DestroyObject);
+        AccessTable.Columns.Add(ModifyObject);
+        AccessTable.Columns.Add(ChangeUserRights);
 
         Globals.UserSet.Tables.Add(UserTable);
-        Globals.UserSet.Tables.Add(AccesTable);
+        Globals.UserSet.Tables.Add(AccessTable);
 
-        DataColumn parentColumn = Globals.UserSet.Tables["Acces"].Columns["Acces_ID"];
-        DataColumn childColumn = Globals.UserSet.Tables["Users"].Columns["UserAccesType"];
+        DataColumn parentColumn = Globals.UserSet.Tables["Access"].Columns["Access_ID"];
+        DataColumn childColumn = Globals.UserSet.Tables["Users"].Columns["UserAccessType"];
 
-        DataRelation relation = new DataRelation("Acces2User",parentColumn,childColumn);
+        DataRelation relation = new DataRelation("Access2User",parentColumn,childColumn);
 
         // DEFINI USERSET DANS GLOBALUSING
         Globals.UserSet.Tables["Users"].ParentRelations.Add(relation);

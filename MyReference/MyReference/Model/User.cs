@@ -4,7 +4,7 @@ namespace MyReference.Model;
 		public Int16 User_ID { get; set; }
 		public string UserName { get; set; }
 		public string UserPassword { get; set; }
-		public Int16 UserAccesType { get; set; }
+		public Int16 UserAccessType { get; set; }
 
 
 }
