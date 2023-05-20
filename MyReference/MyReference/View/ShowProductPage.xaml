@@ -4,6 +4,7 @@
         <MenuBarItem Text="Magasin" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter aliment" Command="{Binding GoToPageWithParameter}" CommandParameter="AddProductPage" />
             <MenuFlyoutItem Text="Inventaire" Command="{Binding GoToPageWithParameter}" CommandParameter="InventoryPage" />
+            <MenuFlyoutItem Text="Admin" Command="{Binding GoToPageWithParameter}" CommandParameter="AdminPage" />
         </MenuBarItem>
     </ContentPage.MenuBarItems>
     <ScrollView>

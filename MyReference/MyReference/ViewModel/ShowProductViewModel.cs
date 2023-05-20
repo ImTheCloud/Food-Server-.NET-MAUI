@@ -86,6 +86,10 @@ public partial class ShowProductViewModel : BaseViewModel
         {
             await Shell.Current.GoToAsync(nameof(InventoryPage));
         }
+        else if (id == "AdminPage" && Globals.isAdmin == true)
+        {
+            await Shell.Current.GoToAsync(nameof(AdminPage));
+        }
         else
         {
             await Application.Current.MainPage.DisplayAlert("Administrateur", "Seul les Administrateurs ont acces à cette séssion", "OK");

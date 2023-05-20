@@ -44,6 +44,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.AddProduc
 build_metadata.AdditionalFiles.TargetPath = View\AddProductPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\AddProductPage.xaml
 
+[C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/AdminPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.AdminPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AdminPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AdminPage.xaml
+
 [C:/Users/claud/OneDrive/Documents/GitHub/Project-Plateforme-net-C/MyReference/MyReference/View/InventoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.InventoryPage.xaml

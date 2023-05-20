@@ -33,9 +33,6 @@
                         </Style>
                     </Entry.Resources>
                 </Entry>
-                <Button Text="Insert" Margin="10" Command="{Binding OnInsertButton}" />
-                <Button Text="Update" Margin="10" Command="{Binding OnUpdateButton}" />
-                <Button Text="Delete" Margin="10" Command="{Binding OnDeleteButton}" />
                 <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}" />
             </StackLayout>
         </StackLayout>
