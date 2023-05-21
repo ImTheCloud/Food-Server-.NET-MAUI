@@ -10,6 +10,8 @@ namespace MyReference.ViewModel
         public ICommand DeleteCommand => new Command<User>(DeleteUser);
         public ICommand AddUserCommand => new Command(AddUser);
         public ICommand onResearchCommand => new Command(SearchingData);
+        public ICommand UpdateCommand => new Command(UpdateUser);
+
 
         UserManagementServices MyDBServices;
 
@@ -124,6 +126,24 @@ namespace MyReference.ViewModel
                 await Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
             }
         }
+
+        public void UpdateUser()
+        {
+            try
+            {
+                string name = UserAddName;
+                int accessType = int.Parse(UserAddAccessType);
+                string password = UserAddPassword;
+               // MyDBServices.UpdateDB(name, password, accessType);
+
+                Shell.Current.DisplayAlert("DataBase", "L'utilisateur a été mise à jour", "ok");
+            }
+            catch (Exception ex)
+            {
+                 Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+            }
+        }
+        
 
         public void AddUser()
         {
