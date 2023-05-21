@@ -127,19 +127,20 @@ namespace MyReference.ViewModel
 
         public void AddUser()
         {
-            string name = UserAddName;
-            int accessType = int.Parse(UserAddAccessType);
-            string password = UserAddPassword;
+         
             try
             {
+                string name = UserAddName;
+                int accessType = int.Parse(UserAddAccessType);
+                string password = UserAddPassword;
                 MyDBServices.insertIntoDB(name, password, accessType);
                 myUserList.Clear();
-                newFill();
+               // newFill();
                 loadFromDB();
             }
-            catch (Exception ex)
+            catch
             {
-                Shell.Current.DisplayAlert("DataBase", ex.Message, "ok");
+                Shell.Current.DisplayAlert("Valeurs vides", "Tout les champs sont obligatoire", "ok");
             }
         }
 

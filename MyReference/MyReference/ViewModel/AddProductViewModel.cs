@@ -96,21 +96,31 @@ namespace MyReference.ViewModel
             string prix = Prix;
             string details = Details;
 
-            var item = new Food
+
+            try
             {
-                Name = name,
-                Quantite = int.Parse(quantite),
-                Details = details,
-                Image = image,
-                Code = code,
-                Prix = double.Parse(prix)
-            };
+                var item = new Food
+                {
+                    Name = name,
+                    Quantite = int.Parse(quantite),
+                    Details = details,
+                    Image = image,
+                    Code = code,
+                    Prix = double.Parse(prix)
+                };
+                FoodService myService = new();
 
-            FoodService myService = new();
+                Globals.MyStaticList.Add(item);
+                await myService.SetFoodJson();
+                await Application.Current.MainPage.DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
+            }
+            catch
+            {
+                await Shell.Current.DisplayAlert("Valeur vide", "Tous les champs sont obligatoire", "ok");
+            }
+          
 
-            Globals.MyStaticList.Add(item);
-            await myService.SetFoodJson();
-            await Application.Current.MainPage.DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
+   
         }
     }
 }

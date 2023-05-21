@@ -745,6 +745,9 @@
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\Resources\Raw\backgroundAddProduct.jpg">
       <PackagePath>backgroundAddProduct.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\Resources\Raw\backgroundInventory.jpg">
+      <PackagePath>backgroundInventory.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\Resources\Raw\banane.jpg">
       <PackagePath>banane.jpg</PackagePath>
     </AppxPackagedFile>

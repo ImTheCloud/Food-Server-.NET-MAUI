@@ -24,7 +24,7 @@
                 <Label Text="Type d'accès:" TextColor="Black" />
                 <Entry Text="{Binding UserAddAccessType}" TextColor="Black" BackgroundColor="#E8E8E8" Margin="0,0,0,10" HeightRequest="40" />
                 <Label Text="Mot de passe:" TextColor="Black" />
-                <Entry Text="{Binding UserAddPassword}" TextColor="Black" BackgroundColor="#E8E8E8" Margin="0,0,0,10" HeightRequest="40" />
+                <Entry Text="{Binding UserAddPassword}" TextColor="Black" BackgroundColor="#E8E8E8" Margin="0,0,0,10" HeightRequest="40" IsPassword="True" />
                 <Button Text="Ajouter " Command="{Binding AddUserCommand}" BackgroundColor="DarkGoldenrod" TextColor="White" Margin="0,10,0,0" />
             </StackLayout>
         </StackLayout>
@@ -50,7 +50,6 @@
                             VerticalOptions="Center"
                             Margin="10,5,0,5"/>
                 </StackLayout>
-
                 <CollectionView ItemsSource="{Binding myUserList}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:User">
@@ -69,17 +68,17 @@
                                         <Entry Text="{Binding UserAccessType}" TextColor="Black" BackgroundColor="White" Margin="0,0,0,10" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Button Text="Supprimer"
-                                                TextColor="White"
-                                                BackgroundColor="#E53935"
-                                                Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyAdminPage}}"
-                                                CommandParameter="{Binding .}" />
                                         <Button Text="Mise à jour"
                                                 TextColor="White"
                                                 BackgroundColor="Green"
                                                 Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference MyAdminPage}}"
                                                 CommandParameter="{Binding .}"
                                                 Margin="10,0,0,0" />
+                                        <Button Text="Supprimer"
+                                                TextColor="White"
+                                                BackgroundColor="#E53935"
+                                                Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyAdminPage}}"
+                                                CommandParameter="{Binding .}" />
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>

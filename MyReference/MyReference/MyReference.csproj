@@ -59,6 +59,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Raw\background.jpg" />
 	  <None Remove="Resources\Raw\backgroundAddProduct.jpg" />
+	  <None Remove="Resources\Raw\backgroundInventory.jpg" />
 	  <None Remove="Resources\Raw\banane.jpg" />
 	  <None Remove="Resources\Raw\connexion.jpg" />
 	  <None Remove="Resources\Raw\fraise.png" />

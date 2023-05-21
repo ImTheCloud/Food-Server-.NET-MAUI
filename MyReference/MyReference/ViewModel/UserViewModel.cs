@@ -47,6 +47,7 @@ public partial class UserViewModel : BaseViewModel
         string password = Password;
         //await Shell.Current.GoToAsync(nameof(ShowProductPage));
         Boolean isCorrect = false;
+        Globals.isAdmin = false;
 
 
         foreach (var item in Globals.UserList)
