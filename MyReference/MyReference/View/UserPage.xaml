@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:model="clr-namespace:MyReference.Model" xmlns:viewmodel="clr-namespace:MyReference.ViewModel" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MyReference.UserPage" x:DataType="viewmodel:UserViewModel" x:Name="myPage" BackgroundImageSource="user.png" Title="UserPage">
-    <VerticalStackLayout>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <StackLayout BackgroundColor="#E8E8E8" Padding="20" Spacing="10">
-                <Entry Placeholder="Entrez votre nom" x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}">
-                    <Entry.Resources>
-                        <Style TargetType="Entry">
-                            <Setter Property="BackgroundColor" Value="#F2F2F2" />
-                            <Setter Property="PlaceholderColor" Value="#999999" />
-                            <Setter Property="TextColor" Value="Black" />
-                            <Setter Property="HeightRequest" Value="40" />
-                            <Setter Property="Margin" Value="10" />
-                            <Setter Property="FontSize" Value="16" />
-                            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                            <Setter Property="VerticalOptions" Value="FillAndExpand" />
-                            <Setter Property="WidthRequest" Value="200" />
-                        </Style>
-                    </Entry.Resources>
-                </Entry>
-                <Entry Placeholder="Entrez votre code" x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}">
-                    <Entry.Resources>
-                        <Style TargetType="Entry">
-                            <Setter Property="BackgroundColor" Value="#F2F2F2" />
-                            <Setter Property="PlaceholderColor" Value="#999999" />
-                            <Setter Property="TextColor" Value="Black" />
-                            <Setter Property="HeightRequest" Value="40" />
-                            <Setter Property="Margin" Value="10" />
-                            <Setter Property="FontSize" Value="16" />
-                            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                            <Setter Property="VerticalOptions" Value="FillAndExpand" />
-                            <Setter Property="WidthRequest" Value="200" />
-                        </Style>
-                    </Entry.Resources>
-                </Entry>
-                <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}" />
-            </StackLayout>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:model="clr-namespace:MyReference.Model"
+             xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyReference.UserPage" x:DataType="viewmodel:UserViewModel"
+             x:Name="myPage" 
+             BackgroundImageSource="connexion.jpg"
+             Title="Connexion">
+    <Grid VerticalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Text="Bienvenue dans notre supermarché !" TextColor="Black" FontSize="30" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="10">
+            <Label.FontAttributes>
+                <OnPlatform x:TypeArguments="FontAttributes">
+                    <On Platform="Android" Value="Bold" />
+                    <On Platform="iOS" Value="Bold" />
+                    <On Platform="UWP" Value="Bold" />
+                </OnPlatform>
+            </Label.FontAttributes>
+        </Label>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center"
+                     WidthRequest="300" HeightRequest="400">
+
+            <Frame BackgroundColor="#F2F2F2" Padding="20" CornerRadius="10" HasShadow="True" Opacity="0.8">
+
+                <StackLayout Spacing="10">
+                    <Label Text="Entrez votre nom d'utilisateur : " TextColor="Black" FontSize="14" HorizontalOptions="Center" />
+                    <Entry x:Name="usernameEntry" TextColor="Black" Text="{Binding Name}">
+                        <Entry.Resources>
+                            <Style TargetType="Entry">
+                                <Setter Property="BackgroundColor" Value="#E8E8E8" />
+                                <Setter Property="PlaceholderColor" Value="#999999" />
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="HeightRequest" Value="40" />
+                                <Setter Property="Margin" Value="10" />
+                                <Setter Property="FontSize" Value="16" />
+                            </Style>
+                        </Entry.Resources>
+                    </Entry>
+
+                    <Label Text="Entrez votre mot de passe : " TextColor="Black" FontSize="14" HorizontalOptions="Center" />
+                    <Entry x:Name="passwordEntry" TextColor="Black" IsPassword="True" Text="{Binding Password}">
+                        <Entry.Resources>
+                            <Style TargetType="Entry">
+                                <Setter Property="BackgroundColor" Value="#E8E8E8" />
+                                <Setter Property="PlaceholderColor" Value="#999999" />
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="HeightRequest" Value="40" />
+                                <Setter Property="Margin" Value="10" />
+                                <Setter Property="FontSize" Value="16" />
+                            </Style>
+                        </Entry.Resources>
+                    </Entry>
+
+                    <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}" BackgroundColor="DarkGoldenrod" TextColor="White" CornerRadius="5" HeightRequest="40" HorizontalOptions="Center" />
+                    <Label Grid.Row="2" Text="Version 2.0" TextColor="Black" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" Margin="10" />
+
+                </StackLayout>
+
+            </Frame>
         </StackLayout>
 
-        <Label Text="Version 2.0" TextColor="Black" FontSize="12" HorizontalOptions="Start" VerticalOptions="End" Margin="10" />
-    </VerticalStackLayout>
+
+    </Grid>
 </ContentPage>

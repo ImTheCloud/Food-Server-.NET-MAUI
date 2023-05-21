@@ -57,9 +57,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Raw\backgroundProduct.png" />
-	  <None Remove="Resources\Raw\backgroundShow.png" />
-	  <None Remove="Resources\Raw\user.png" />
+	  <None Remove="Resources\Raw\background.jpg" />
+	  <None Remove="Resources\Raw\backgroundAddProduct.jpg" />
+	  <None Remove="Resources\Raw\banane.jpg" />
+	  <None Remove="Resources\Raw\connexion.jpg" />
+	  <None Remove="Resources\Raw\fraise.png" />
+	  <None Remove="Resources\Raw\orange.jpg" />
+	  <None Remove="Resources\Raw\pomme.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

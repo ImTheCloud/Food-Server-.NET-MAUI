@@ -4,21 +4,22 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
 	xmlns:model="clr-namespace:MyReference.Model"
-    Title="Scanner un aliment"
+    Title="Inventaire"
     x:DataType="viewmodel:InventoryViewModel"
     x:Class="MyReference.InventoryPage"
     x:Name="MyINVPage"
-    BackgroundImageSource="backgroundShow.png">
+    BackgroundImageSource="background.jpg">
 
 
     <ScrollView>
-        <Grid BackgroundColor="#80000000" Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+        <Grid BackgroundColor="#00000000" Padding="10" RowSpacing="10" ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+
             <CollectionView ItemsSource="{Binding AllFoodList}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
-                        <Grid Padding="10" ColumnDefinitions="500,*" BackgroundColor="#80000000">
+                        <Grid Padding="10" ColumnDefinitions="500,*" BackgroundColor="#00000000">
                             <Border HeightRequest="125">
-                                <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Black">
+                                <Grid Padding="0" ColumnDefinitions="125,*">
                                     <Image
                                     Aspect="AspectFill"
                                     HeightRequest="100"
@@ -29,25 +30,25 @@
                                     Grid.Column="1"
                                     Padding="10">
                                         <HorizontalStackLayout>
-                                            <Label VerticalOptions="Center" Text="Name : "/>
-                                            <Label VerticalOptions="Center" Text="{Binding Name}"/>
+                                            <Label VerticalOptions="Center" Text="Name : " TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="{Binding Name}" TextColor="Black" />
                                         </HorizontalStackLayout>
                                         <HorizontalStackLayout>
-                                            <Label VerticalOptions="Center" Text="Code : "/>
-                                            <Label VerticalOptions="Center" Text="{Binding Code}"/>
+                                            <Label VerticalOptions="Center" Text="Code : " TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="{Binding Code}" TextColor="Black" />
                                         </HorizontalStackLayout>
                                         <HorizontalStackLayout>
-                                            <Label VerticalOptions="Center" Text="Quantité : "/>
-                                            <Label VerticalOptions="Center" Text="{Binding Quantite}"/>
+                                            <Label VerticalOptions="Center" Text="Quantité : " TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="{Binding Quantite}" TextColor="Black" />
                                         </HorizontalStackLayout>
                                         <HorizontalStackLayout>
-                                            <Label VerticalOptions="Center" Text="Details : "/>
-                                            <Label VerticalOptions="Center" Text="{Binding Details}"/>
+                                            <Label VerticalOptions="Center" Text="Details : " TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="{Binding Details}" TextColor="Black" />
                                         </HorizontalStackLayout>
                                         <HorizontalStackLayout>
-                                            <Label VerticalOptions="Center" Text="Prix : "/>
-                                            <Label VerticalOptions="Center" Text="{Binding Prix}"/>
-                                            <Label VerticalOptions="Center" Text="€"/>
+                                            <Label VerticalOptions="Center" Text="Prix : " TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="{Binding Prix}" TextColor="Black" />
+                                            <Label VerticalOptions="Center" Text="€" TextColor="Black" />
                                         </HorizontalStackLayout>
                                     </VerticalStackLayout>
                                     <Button Text="Supprimer" Grid.Column="2" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" TextColor="White" BackgroundColor="Red" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyINVPage}}" CommandParameter="{Binding .}" />
@@ -57,26 +58,10 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300">
 
-                <Entry Placeholder="Code bare ici" 
-          VerticalOptions="Center" 
-          HorizontalOptions="FillAndExpand" 
-          Text="{Binding Code}" 
-          BackgroundColor="White" 
-          TextColor="Black" 
-          HeightRequest="30" 
-          Margin="0,5,10,5"/>
-                <Button Text="Search" 
-           x:Name="SearchButton" 
-           Command="{Binding OnSearchCommand}" 
-           TextColor="White" 
-           BackgroundColor="Black" 
-           CornerRadius="5" 
-           WidthRequest="80" 
-           HeightRequest="30" 
-           VerticalOptions="Center" 
-           Margin="10,5,0,5"/>
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
+                <Entry Placeholder="Code-barres :" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="{Binding Code}" BackgroundColor="White" TextColor="Black" HeightRequest="40" Margin="0,5,10,5" />
+                <Button Text="Rechercher" x:Name="SearchButton" Command="{Binding OnSearchCommand}" CommandParameter="{Binding Code}" TextColor="White" BackgroundColor="DarkGoldenrod" CornerRadius="5" WidthRequest="100" HeightRequest="40" VerticalOptions="Center" />
             </StackLayout>
         </Grid>
     </ScrollView>

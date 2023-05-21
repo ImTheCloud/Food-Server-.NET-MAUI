@@ -1,91 +1,85 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
-       xmlns:model="clr-namespace:MyReference.Model"
-       Title="Page ADMIN"
-       x:DataType="viewmodel:AdminViewModel"
-       x:Class="MyReference.View.AdminPage"
-       x:Name="MyAdminPage">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="PrimaryColor">#2196F3</Color>
-            <Style TargetType="Label">
-                <Setter Property="FontSize" Value="18" />
-                <Setter Property="TextColor" Value="Black" />
-                <Setter Property="Margin" Value="0,5,0,5" />
-            </Style>
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#E53935" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="Margin" Value="0,10,0,10" />
-            </Style>
-            <Style TargetType="Entry">
-                <Setter Property="BackgroundColor" Value="#F5F5F5" />
-                <Setter Property="TextColor" Value="Black" />
-                <Setter Property="Margin" Value="0,5,0,5" />
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
+             xmlns:model="clr-namespace:MyReference.Model"
+             Title="Page ADMIN"
+             x:DataType="viewmodel:AdminViewModel"
+             x:Class="MyReference.View.AdminPage"
+             x:Name="MyAdminPage"
+             BackgroundImageSource="connexion.jpg">
 
-    <ScrollView>
-        <StackLayout Margin="20">
-            <CollectionView ItemsSource="{Binding myUserList}" SelectionMode="None">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:User">
-                        <Frame BackgroundColor="#EFEFEF" Padding="10" Margin="0,0,0,20" CornerRadius="10">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
 
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="ID Utilisateur : " FontSize="16" TextColor="#333333" />
-                                    <Label Text="{Binding User_ID}" />
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Nom d'utilisateur : " FontSize="16" TextColor="#333333" />
-                                    <Label Text="{Binding UserName}" />
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Type d'accès : " FontSize="16" TextColor="#333333" />
-                                    <Entry Text="{Binding UserAccessType}" />
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                                    <Button Text="Supprimer" Grid.Column="1" VerticalOptions="CenterAndExpand" TextColor="White" BackgroundColor="Red"
-            Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyAdminPage}}"
-            CommandParameter="{Binding .}" />
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-            <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0" WidthRequest="300">
-                <Entry Placeholder="Nom de l'utilisateur" 
-      VerticalOptions="Center" 
-      HorizontalOptions="FillAndExpand" 
-      Text="{Binding Name}" 
-      BackgroundColor="White" 
-      TextColor="Black" 
-      HeightRequest="30" 
-      Margin="0,5,10,5"/>
-                <Button Text="Rechercher" 
-       x:Name="SearchButton" 
-       Command="{Binding onResearchCommand}" 
-       TextColor="White" 
-       BackgroundColor="Black" 
-       CornerRadius="5" 
-       WidthRequest="80" 
-       HeightRequest="30" 
-       VerticalOptions="Center" 
-       Margin="10,5,0,5"/>
+        <!-- Partie gauche : Ajout d'un nouvel utilisateur -->
+        <StackLayout Grid.Column="0" Margin="20" BackgroundColor="White" HorizontalOptions="CenterAndExpand" >
+            <Label Text="Zone Admin" HorizontalOptions="Center" FontSize="24" TextColor="Black" />
+
+            <StackLayout Margin="10">
+                <Label Text="Nom d'utilisateur:" TextColor="Black" />
+                <Entry Text="{Binding UserAddName}" TextColor="Black" BackgroundColor="White" />
+                <Label Text="Type d'accès:" TextColor="Black" />
+                <Entry Text="{Binding UserAddAccessType}" TextColor="Black" BackgroundColor="White" />
+                <Label Text="Mot de passe:" TextColor="Black" />
+                <Entry Text="{Binding UserAddPassword}" TextColor="Black" BackgroundColor="White" />
+                <Button Text="Ajouter un nouvel utilisateur" Command="{Binding AddUserCommand}" BackgroundColor="DarkGoldenrod" TextColor="White" Margin="0,10,0,0" />
             </StackLayout>
-            <Label Text="Nom d'utilisateur: " FontSize="16" TextColor="#333333" />
-            <Entry Text="{Binding UserAddName}" />
-            <Label Text="Access type : " FontSize="16" TextColor="#333333" />
-            <Entry Text="{Binding UserAddAccessType}" />
-            <Label Text="Password : " FontSize="16" TextColor="#333333" />
-            <Entry Text="{Binding UserAddPassword}" />
-            <Button Text="Ajouter un nouvel utilisateur" Margin="10" Command="{Binding AddUserCommand}" />
-
         </StackLayout>
-    </ScrollView>
+
+        <!-- Partie droite : Liste de tous les utilisateurs -->
+        <ScrollView Grid.Column="1" Margin="20" BackgroundColor="White">
+            <StackLayout>
+                <Label Text="Liste des utilisateurs" HorizontalOptions="Center" FontSize="24" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" VerticalOptions="Center" Margin="0,10,0,0">
+                    <Entry Placeholder="Nom de l'utilisateur"
+                           VerticalOptions="Center"
+                           Text="{Binding Name}"
+                           BackgroundColor="White"
+                           TextColor="Black"
+                           Margin="0,5,10,5"/>
+                    <Button Text="Rechercher"
+                            Command="{Binding onResearchCommand}"
+                            TextColor="White"
+                            BackgroundColor="#E53935"
+                            WidthRequest="80"
+                            VerticalOptions="Center"
+                            Margin="10,5,0,5"/>
+                </StackLayout>
+
+                <CollectionView ItemsSource="{Binding myUserList}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:User">
+                            <Frame Padding="10" Margin="0,5,0,5" BackgroundColor="White" BorderColor="Black">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="ID Utilisateur : " TextColor="Black" />
+                                        <Label Text="{Binding User_ID}" TextColor="Black" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Nom d'utilisateur : " TextColor="Black" />
+                                        <Label Text="{Binding UserName}" TextColor="Black" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Type d'accès : " TextColor="Black" />
+                                        <Entry Text="{Binding UserAccessType}" TextColor="Black" BackgroundColor="White" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                        <Button Text="Supprimer"
+                                                TextColor="White"
+                                                BackgroundColor="#E53935"
+                                                Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyAdminPage}}"
+                                                CommandParameter="{Binding .}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

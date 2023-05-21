@@ -4,8 +4,8 @@ namespace MyReference.ViewModel;
 
 public class InventoryViewModel : ContentPage
 {
-	public InventoryViewModel()
-	{
+    public InventoryViewModel()
+    {
         AllFoodCollection();
 
     }
@@ -62,7 +62,7 @@ public class InventoryViewModel : ContentPage
             {
                 AllFoodList.Add(stu);
             }
-            else if(barcodeData== "")
+            else if (barcodeData == "")
             {
                 AllFoodList.Add(stu);
             }

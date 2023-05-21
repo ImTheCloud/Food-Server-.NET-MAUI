@@ -5,8 +5,8 @@
 	xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
     x:Class="MyReference.View.AddProductPage"
     Title="Ajouter un aliment"
-    BackgroundImageSource="backgroundProduct.png">
-    
+    BackgroundImageSource="backgroundAddProduct.jpg">
+
     <Grid HorizontalOptions="Center">
         <StackLayout  HorizontalOptions="Center">
             <Border BackgroundColor="#fff" Margin="10">
