@@ -2,7 +2,7 @@ using System.Windows.Input;
 
 namespace MyReference.ViewModel;
 
-public class InventoryViewModel : ContentPage
+public partial class InventoryViewModel : BaseViewModel
 {
     public InventoryViewModel()
     {
@@ -14,21 +14,9 @@ public class InventoryViewModel : ContentPage
     public ICommand DeleteCommand => new Command<Food>(DeleteFood);
     public ICommand OnSearchCommand => new Command(SearchingData);
 
-
-    public string _code;
-    public string barcodeData;
-    public string Code
-    {
-        get { return _code; }
-        set
-        {
-            if (_code != value)
-            {
-                _code = value;
-                OnPropertyChanged(nameof(Code));
-            }
-        }
-    }
+    [ObservableProperty]
+    public string code;
+   
 
     public void AllFoodCollection()
     {
@@ -53,16 +41,16 @@ public class InventoryViewModel : ContentPage
 
     public void SearchingData()
     {
-        barcodeData = Code;
+        string code = Code;
 
         AllFoodList.Clear();
         foreach (Food stu in Globals.MyStaticList)
         {
-            if (stu.Code == barcodeData)
+            if (stu.Code == code)
             {
                 AllFoodList.Add(stu);
             }
-            else if (barcodeData == "")
+            else if (code == "")
             {
                 AllFoodList.Add(stu);
             }

@@ -25,7 +25,7 @@ public partial class UserManagementServices
         DataColumn ChangeUserRights    = new DataColumn("ChangeUserRights", System.Type.GetType("System.Boolean"));
 
         //UserTable
-        UserTable.TableName="users";
+        UserTable.TableName="Users";
         User_ID.AutoIncrement=true;
         User_ID.Unique=true;
         UserTable.Columns.Add(User_ID);

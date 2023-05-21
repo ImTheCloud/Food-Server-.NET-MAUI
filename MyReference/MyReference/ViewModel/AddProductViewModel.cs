@@ -15,77 +15,20 @@ namespace MyReference.ViewModel
 
         public ICommand SaveItem => new Command(AddFood);
 
-        public string _name;
-        public string _quantite;
-        public string _details;
-        public string _prix;
-        public string _code;
-        public string _image;
+        [ObservableProperty]
+        public string name;
 
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                if (_name != value)
-                {
-                    _name = value;
-                    OnPropertyChanged(nameof(Name));
-                }
-            }
-        }
-
-        public string Quantite
-        {
-            get { return _quantite; }
-            set
-            {
-                if (_quantite != value)
-                {
-                    _quantite = value;
-                    OnPropertyChanged(nameof(Quantite));
-                }
-            }
-        }
-
-        public string Details
-        {
-            get { return _details; }
-            set
-            {
-                if (_details != value)
-                {
-                    _details = value;
-                    OnPropertyChanged(nameof(Details));
-                }
-            }
-        }
-
-        public string Image
-        {
-            get { return _image; }
-            set
-            {
-                if (_image != value)
-                {
-                    _image = value;
-                    OnPropertyChanged(nameof(Image));
-                }
-            }
-        }
-
-        public string Prix
-        {
-            get { return _prix; }
-            set
-            {
-                if (_prix != value)
-                {
-                    _prix = value;
-                    OnPropertyChanged(nameof(Prix));
-                }
-            }
-        }
+        [ObservableProperty]
+        public string quantite;
+        
+        [ObservableProperty]
+        public string details;
+        
+        [ObservableProperty]
+        public string prix;
+        
+        [ObservableProperty]
+        public string image;
 
         public async void AddFood()
         {
@@ -95,7 +38,7 @@ namespace MyReference.ViewModel
             string code = Code;
             string prix = Prix;
             string details = Details;
-
+            Boolean foodfind = false;
 
             try
             {
@@ -109,10 +52,22 @@ namespace MyReference.ViewModel
                     Prix = double.Parse(prix)
                 };
                 FoodService myService = new();
-
-                Globals.MyStaticList.Add(item);
-                await myService.SetFoodJson();
-                await Application.Current.MainPage.DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
+                foreach(var food in Globals.MyStaticList)
+                {
+                    if(item.Code== food.Code)
+                    {
+                        foodfind = true;
+                    }
+                }
+                if(foodfind == false) {
+                    Globals.MyStaticList.Add(item);
+                    await myService.SetFoodJson();
+                    await Application.Current.MainPage.DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
+                } else
+                {
+                    await Shell.Current.DisplayAlert("Code répété", "Vous ne pouvez pas avoir deux codes d'articles identiques", "ok");
+                }
+               
             }
             catch
             {

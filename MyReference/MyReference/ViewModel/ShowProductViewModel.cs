@@ -95,6 +95,9 @@ namespace MyReference.ViewModel
                 {
                     MyShownList.Add(stu);
                     isFoodFound = true;
+                }else if(code == "")
+                {
+                    //rien faire
                 }
             }
 

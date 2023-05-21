@@ -1670,3 +1670,9 @@ C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows1
 C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.dll
 C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.PerformanceCounter.dll
 C:\Users\claud\OneDrive\Bureau\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Configuration.ConfigurationManager.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Data.OleDb.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Bartek\Desktop\MyReference\MyReference\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.ProtectedData.dll

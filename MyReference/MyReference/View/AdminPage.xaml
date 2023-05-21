@@ -43,7 +43,7 @@
                            TextColor="Black"
                            Margin="0,5,20,5"/>
                     <Button Text="Rechercher"
-                            Command="{Binding onResearchCommand}"
+                            Command="{Binding OnResearchCommand}"
                             TextColor="White"
                             BackgroundColor="DarkGoldenrod"
                             WidthRequest="120"
@@ -64,14 +64,18 @@
                                         <Label Text="{Binding UserName}" TextColor="Black" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="Type d'accès : " TextColor="Black" />
-                                        <Entry Text="{Binding UserAccessType}" TextColor="Black" BackgroundColor="White" Margin="0,0,0,10" />
+                                        <Label Text="Mot de passe : " TextColor="Black" />
+                                        <Label Text="{Binding UserPassword}" TextColor="Black" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Button Text="Mise à jour"
+                                        <Label Text="Type d'accès : " TextColor="Black" />
+                                        <Label Text="{Binding UserAccessType}" TextColor="Black" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button Text="Changer en admin/user"
                                                 TextColor="White"
                                                 BackgroundColor="Green"
-                                                Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference MyAdminPage}}"
+                                                Command="{Binding Path=BindingContext.ToAdminUserCommand, Source={x:Reference MyAdminPage}}"
                                                 CommandParameter="{Binding .}"
                                                 Margin="10,0,0,0" />
                                         <Button Text="Supprimer"
