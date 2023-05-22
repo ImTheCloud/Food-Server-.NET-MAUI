@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KIMsFprofaTgBYKYlGFwDg2zcAmNrY8fI28J2PpVo2WM5q5keJmoQXjr8HXGEHE9WO7KbIN9ZqfSTvgkyVsyBQ==",
+  "dgSpecHash": "2ErEmj2MnBZH8yBEul2KraoJVa1Mk/f8JybBSsL9ybjCtTQ98dNrJUNffjfs1an78GKbAzXflK/H7rJdJ9jHmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
+  "projectFilePath": "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\claud\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",

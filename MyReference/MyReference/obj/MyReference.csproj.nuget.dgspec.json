@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj": {}
+    "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj": {}
   },
   "projects": {
-    "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj": {
+    "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
+        "projectUniqueName": "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
         "projectName": "MyReference",
-        "projectPath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
+        "projectPath": "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\MyReference.csproj",
         "packagesPath": "C:\\Users\\claud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\claud\\OneDrive\\Documents\\GitHub\\Project-Plateforme-net-C\\MyReference\\MyReference\\obj\\",
+        "outputPath": "C:\\Users\\claud\\OneDrive\\Bureau\\Cloud\\Informatique\\High School\\Bloc2\\Quadri 4\\4-2  .Net III (3)\\Project-Plateforme-net-C\\MyReference\\MyReference\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

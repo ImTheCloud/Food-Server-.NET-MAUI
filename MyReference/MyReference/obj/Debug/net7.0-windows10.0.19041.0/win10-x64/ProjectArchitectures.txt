@@ -1,1 +1,1 @@
-C:\Users\claud\OneDrive\Documents\GitHub\Project-Plateforme-net-C\MyReference\MyReference\MyReference.csproj;x64
+C:\Users\claud\OneDrive\Bureau\Cloud\Informatique\High School\Bloc2\Quadri 4\4-2  .Net III (3)\Project-Plateforme-net-C\MyReference\MyReference\MyReference.csproj;x64
