@@ -32,18 +32,18 @@ namespace MyReference.ViewModel
 
         public async void AddFood()
         {
-            string name = Name;
-            string quantite = Quantite;
-            string image = Image;
-            string code = Code;
-            string prix = Prix;
-            string details = Details;
-            bool foodfind = false;
+            string name = Name; // Récupère la valeur de la propriété Name
+            string quantite = Quantite; // Récupère la valeur de la propriété Quantite
+            string image = Image; // Récupère la valeur de la propriété Image
+            string code = Code; // Récupère la valeur de la propriété Code
+            string prix = Prix; // Récupère la valeur de la propriété Prix
+            string details = Details; // Récupère la valeur de la propriété Details
+            bool foodfind = false; // Variable pour indiquer si le produit est déjà présent dans la liste
 
             try
             {
-                int parsedQuantite;
-                double parsedPrix;
+                int parsedQuantite; // Variable pour stocker la quantité convertie en entier
+                double parsedPrix; // Variable pour stocker le prix converti en double
 
                 if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(quantite) || string.IsNullOrWhiteSpace(prix))
                 {
@@ -67,20 +67,20 @@ namespace MyReference.ViewModel
                     Prix = parsedPrix
                 };
 
-                FoodService myService = new();
+                FoodService myService = new(); // Instance de la classe FoodService
                 foreach (var food in Globals.MyStaticList)
                 {
                     if (item.Code == food.Code)
                     {
-                        foodfind = true;
+                        foodfind = true; // Le produit est déjà présent dans la liste
                     }
                 }
                 if (foodfind == false)
                 {
                     try
                     {
-                        Globals.MyStaticList.Add(item);
-                        await myService.SetFoodJson();
+                        Globals.MyStaticList.Add(item); // Ajoute le produit à la liste
+                        await myService.SetFoodJson(); // Appelle la méthode SetFoodJson de FoodService pour enregistrer les modifications
                         await Application.Current.MainPage.DisplayAlert("Le produit a été enregistré.", "Enregistrement réussi", "OK");
                     }
                     catch (Exception ex)
@@ -102,3 +102,5 @@ namespace MyReference.ViewModel
         }
     }
 }
+
+

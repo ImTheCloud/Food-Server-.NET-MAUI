@@ -1,64 +1,58 @@
 using System.Windows.Input;
 
-namespace MyReference.ViewModel;
-
-public partial class InventoryViewModel : BaseViewModel
+namespace MyReference.ViewModel
 {
-    public InventoryViewModel()
+    public partial class InventoryViewModel : BaseViewModel
     {
-        AllFoodCollection();
-
-    }
-
-    public ObservableCollection<Food> AllFoodList { get; } = new ObservableCollection<Food>();
-    public ICommand DeleteCommand => new Command<Food>(DeleteFood);
-    public ICommand OnSearchCommand => new Command(SearchingData);
-
-    [ObservableProperty]
-    public string code;
-   
-
-    public void AllFoodCollection()
-    {
-        AllFoodList.Clear();
-        foreach (Food stu in Globals.MyStaticList)
+        public InventoryViewModel()
         {
-            AllFoodList.Add(stu);
-        }
-    }
-
-
-    private async void DeleteFood(Food food)
-    {
-        try
-        {
-            Globals.MyStaticList.Remove(food);
             AllFoodCollection();
-            FoodService myService = new();
-            await myService.SetFoodJson();
         }
-        catch (Exception ex)
+
+        public ObservableCollection<Food> AllFoodList { get; } = new ObservableCollection<Food>(); // Liste observable de tous les aliments
+        public ICommand DeleteCommand => new Command<Food>(DeleteFood); // Commande de suppression
+        public ICommand OnSearchCommand => new Command(SearchingData); // Commande de recherche
+
+        [ObservableProperty]
+        public string code; // Code utilisé pour la recherche
+
+        public void AllFoodCollection()
         {
-            await Shell.Current.DisplayAlert("Erreur", "Une erreur s'est produite lors de la suppression du produit.", "OK");
-            Console.WriteLine($"Erreur lors de la suppression du produit : {ex.Message}");
-        }
-    }
-
-
-
-
-    public void SearchingData()
-    {
-        string code = Code;
-
-        AllFoodList.Clear();
-        foreach (Food stu in Globals.MyStaticList)
-        {
-            if (stu.Code == code)
+            AllFoodList.Clear();
+            foreach (Food stu in Globals.MyStaticList)
             {
-                AllFoodList.Add(stu);
+                AllFoodList.Add(stu); // Ajoute chaque aliment à la liste observable
+            }
+        }
+
+        private async void DeleteFood(Food food)
+        {
+            try
+            {
+                Globals.MyStaticList.Remove(food); // Supprime l'aliment de la liste globale
+                AllFoodCollection();
+                FoodService myService = new();
+                await myService.SetFoodJson(); // Met à jour le fichier JSON
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Erreur", "Une erreur s'est produite lors de la suppression du produit.", "OK");
+                Console.WriteLine($"Erreur lors de la suppression du produit : {ex.Message}");
+            }
+        }
+
+        public void SearchingData()
+        {
+            string code = Code; // Récupère le code de recherche
+
+            AllFoodList.Clear();
+            foreach (Food stu in Globals.MyStaticList)
+            {
+                if (stu.Code == code)
+                {
+                    AllFoodList.Add(stu); // Ajoute l'aliment correspondant à la liste observable
+                }
             }
         }
     }
-
 }

@@ -4,32 +4,33 @@ namespace MyReference.ViewModel
 {
     public partial class AdminViewModel : BaseViewModel
     {
-        public ObservableCollection<User> myUserList { get; set; } = new();
-        public ICommand DeleteCommand => new Command<User>(DeleteUser);
-        public ICommand ToAdminUserCommand => new Command<User>(UpdateUser);
-        public ICommand AddUserCommand => new Command(AddUser);
-        public ICommand OnResearchCommand => new Command(SearchingData);
+        public ObservableCollection<User> myUserList { get; set; } = new(); // Liste observable des utilisateurs
 
-        UserManagementServices MyDBServices;
+        public ICommand DeleteCommand => new Command<User>(DeleteUser); // Commande de suppression d'un utilisateur
+        public ICommand ToAdminUserCommand => new Command<User>(UpdateUser); // Commande pour mettre à jour les autorisations d'un utilisateur
+        public ICommand AddUserCommand => new Command(AddUser); // Commande pour ajouter un utilisateur
+        public ICommand OnResearchCommand => new Command(SearchingData); // Commande pour effectuer une recherche de données
+
+        UserManagementServices MyDBServices; // Instance de la classe UserManagementServices
 
         public AdminViewModel(UserManagementServices myDBServices)
         {
-            loadFromDB();
-            this.MyDBServices = myDBServices;
-            MyDBServices.ConfigTools();
+            loadFromDB(); // Charge les données depuis la base de données
+            this.MyDBServices = myDBServices; // Initialise l'instance de UserManagementServices
+            MyDBServices.ConfigTools(); // Configure les outils de la base de données
         }
 
         [ObservableProperty]
-        public string name;
+        public string name; // Nom pour la recherche
 
         [ObservableProperty]
-        public string userAddName;
+        public string userAddName; // Nom de l'utilisateur à ajouter
 
         [ObservableProperty]
-        public string userAddAccessType;
+        public string userAddAccessType; // Type d'accès de l'utilisateur à ajouter
 
         [ObservableProperty]
-        public string userAddPassword;
+        public string userAddPassword; // Mot de passe de l'utilisateur à ajouter
 
         public void loadFromDB()
         {
@@ -38,7 +39,7 @@ namespace MyReference.ViewModel
             {
                 foreach (User item in Globals.UserList)
                 {
-                    myUserList.Add(item);
+                    myUserList.Add(item); // Ajoute les utilisateurs à la liste observable
                 }
             }
             catch (Exception ex)
@@ -51,9 +52,9 @@ namespace MyReference.ViewModel
         {
             try
             {
-                MyDBServices.DeleteIntoDB(user.UserName);
-                myUserList.Remove(user);
-                //update fonctionne pas
+                MyDBServices.DeleteIntoDB(user.UserName); // Supprime l'utilisateur de la base de données
+                myUserList.Remove(user); // Supprime l'utilisateur de la liste observable
+                // update fonctionne pas
 
             }
             catch (Exception ex)
@@ -71,11 +72,11 @@ namespace MyReference.ViewModel
 
                 foreach (DataRow row in usersTable.Rows)
                 {
-                    if (row["User_ID"].ToString() == user.User_ID.ToString()) 
+                    if (row["User_ID"].ToString() == user.User_ID.ToString())
                     {
-                        if(user.UserAccessType == 1)
+                        if (user.UserAccessType == 1)
                         {
-                            row["UserAccessType"] = 2;
+                            row["UserAccessType"] = 2; // Met à jour le type d'accès de l'utilisateur
                         }
                         else
                         {
@@ -83,10 +84,10 @@ namespace MyReference.ViewModel
                         }
                         break;
                     }
-                   
+
                 }
-                //MyDBServices.UpdateDB(); // FONCTIONNE PAS
-                NewFill();
+                //MyDBServices.UpdateDB(); // Mise à jour de la base de données (FONCTIONNE PAS)
+                NewFill(); // Remplit à nouveau les données
                 myUserList.Clear();
                 loadFromDB();
             }
@@ -100,31 +101,31 @@ namespace MyReference.ViewModel
         {
             try
             {
-                string userAddName = UserAddName;
-                int userAddAccessType = int.Parse(UserAddAccessType);
-                string userAddPassword = UserAddPassword;
-                MyDBServices.insertIntoDB(userAddName, userAddPassword, userAddAccessType);
-                //le update veut pas marcher, trop compliqué
-               /* NewFill();
-                myUserList.Clear();
-                loadFromDB();
-                */
+                string userAddName = UserAddName; // Récupère le nom de l'utilisateur à ajouter
+                int userAddAccessType = int.Parse(UserAddAccessType); // Récupère le type d'accès de l'utilisateur à ajouter
+                string userAddPassword = UserAddPassword; // Récupère le mot de passe de l'utilisateur à ajouter
+                MyDBServices.insertIntoDB(userAddName, userAddPassword, userAddAccessType); // Insère l'utilisateur dans la base de données
+                                                                                            //le update veut pas marcher, trop compliqué
+                /* NewFill();
+                 myUserList.Clear();
+                 loadFromDB();
+                 */
             }
             catch
             {
-                Shell.Current.DisplayAlert("Valeurs vides", "Tout les champs sont obligatoire", "ok");
+                Shell.Current.DisplayAlert("Valeurs vides", "Tous les champs sont obligatoires", "ok");
             }
         }
 
         public void SearchingData()
         {
-            string name = Name;
+            string name = Name; // Récupère le nom de recherche
             myUserList.Clear();
             foreach (var item in Globals.UserList)
             {
                 if (item.UserName == name)
                 {
-                    myUserList.Add(item);
+                    myUserList.Add(item); // Ajoute l'utilisateur correspondant à la liste observable
                 }
                 else if (name == "")
                 {
@@ -139,14 +140,14 @@ namespace MyReference.ViewModel
 
             if (Globals.UserSet.Tables["Access"].Rows.Count == 0)
             {
-                MyDBServices.ReadFromDB();
+                MyDBServices.ReadFromDB(); // Lit les données depuis la base de données
             }
             if (Globals.UserSet.Tables["Access"].Rows.Count != 0)
             {
                 Globals.UserSet.Tables["Access"].Clear();
             }
 
-            MyDBServices.FillUsersFromDB();
+            MyDBServices.FillUsersFromDB(); // Remplit les utilisateurs depuis la base de données
 
             try
             {
@@ -156,7 +157,7 @@ namespace MyReference.ViewModel
                     UserName = e.Field<string>("UserName"),
                     UserPassword = e.Field<string>("UserPassword"),
                     UserAccessType = e.Field<Int16>("UserAccessType"),
-                }).ToList();
+                }).ToList(); // Convertit les données en objets User et les stocke dans la liste globale des utilisateurs
             }
             catch (Exception ex)
             {
