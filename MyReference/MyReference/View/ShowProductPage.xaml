@@ -27,9 +27,9 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Food">
                         <Grid Padding="10" ColumnDefinitions="150,*" BackgroundColor="White" Margin="0,5,0,0">
-                            <Frame BackgroundColor="White" Padding="5" Opacity="2.0">
-                                <Image Aspect="AspectFill" HeightRequest="100" Source="{Binding Image}" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center" />
-                            </Frame>
+                            <Border BackgroundColor="White" Padding="5" Opacity="2.0">
+                                <Image Aspect="AspectFit" HeightRequest="100" Source="{Binding Image}" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </Border>
                             <StackLayout Grid.Column="1" Padding="10" VerticalOptions="Center">
                                 <Label Text="{Binding Name}" FontSize="16" TextColor="#333333" FontAttributes="Bold" LineBreakMode="WordWrap" MaxLines="2" />
                                 <Label Text="{Binding Code}" FontSize="12" TextColor="#666666" />

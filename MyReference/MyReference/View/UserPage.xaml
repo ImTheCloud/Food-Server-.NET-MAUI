@@ -27,7 +27,7 @@
         <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center"
                      WidthRequest="300" HeightRequest="400">
 
-            <Frame BackgroundColor="#F2F2F2" Padding="20" CornerRadius="10" HasShadow="True" Opacity="0.8">
+            <Border BackgroundColor="#F2F2F2" Padding="20" Opacity="0.8">
 
                 <StackLayout Spacing="10">
                     <Label Text="Entrez votre nom d'utilisateur : " TextColor="Black" FontSize="14" HorizontalOptions="Center" />
@@ -59,11 +59,11 @@
                     </Entry>
 
                     <Button Text="Connexion" Margin="10" Command="{Binding ConnexionButton}" BackgroundColor="DarkGoldenrod" TextColor="White" CornerRadius="5" HeightRequest="40" HorizontalOptions="Center" />
-                    <Label Grid.Row="2" Text="Version 2.0" TextColor="Black" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" Margin="10" />
+                    <Label Grid.Row="2" Text="Version 3.0" TextColor="Black" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" Margin="10" />
 
                 </StackLayout>
 
-            </Frame>
+            </Border>
         </StackLayout>
 
 

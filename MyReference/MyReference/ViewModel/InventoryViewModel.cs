@@ -30,10 +30,18 @@ public partial class InventoryViewModel : BaseViewModel
 
     private async void DeleteFood(Food food)
     {
-        Globals.MyStaticList.Remove(food);
-        AllFoodCollection();
-        FoodService myService = new();
-        await myService.SetFoodJson();
+        try
+        {
+            Globals.MyStaticList.Remove(food);
+            AllFoodCollection();
+            FoodService myService = new();
+            await myService.SetFoodJson();
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Erreur", "Une erreur s'est produite lors de la suppression du produit.", "OK");
+            Console.WriteLine($"Erreur lors de la suppression du produit : {ex.Message}");
+        }
     }
 
 
@@ -47,10 +55,6 @@ public partial class InventoryViewModel : BaseViewModel
         foreach (Food stu in Globals.MyStaticList)
         {
             if (stu.Code == code)
-            {
-                AllFoodList.Add(stu);
-            }
-            else if (code == "")
             {
                 AllFoodList.Add(stu);
             }

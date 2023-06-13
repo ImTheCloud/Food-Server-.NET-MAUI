@@ -21,7 +21,7 @@
                             <Border HeightRequest="125">
                                 <Grid Padding="0" ColumnDefinitions="125,*">
                                     <Image
-                                    Aspect="AspectFill"
+                                    Aspect="AspectFit"
                                     HeightRequest="100"
                                     Source="{Binding Image}"
                                     WidthRequest="100" />
