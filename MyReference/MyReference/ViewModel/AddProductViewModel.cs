@@ -93,13 +93,13 @@ namespace MyReference.ViewModel
                 {
                     await Shell.Current.DisplayAlert("Code répété", "Vous ne pouvez pas avoir deux codes d'articles identiques", "OK");
                 }
-
             }
             catch
             {
                 await Shell.Current.DisplayAlert("Erreur", "Une erreur s'est produite lors de l'enregistrement du produit.", "OK");
             }
         }
+
     }
 }
 
