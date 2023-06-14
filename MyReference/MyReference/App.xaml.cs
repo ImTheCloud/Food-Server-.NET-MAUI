@@ -2,7 +2,7 @@
 {
     public partial class App : Application
     {
-        public App()
+        public App() // importer qlqch une seul fois au moment du run !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         {
             InitializeComponent();
             LoadJson(); // Charge les données à partir d'un fichier JSON

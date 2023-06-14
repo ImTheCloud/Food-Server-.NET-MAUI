@@ -45,7 +45,7 @@ namespace MyReference.ViewModel
 
             if (!isCorrect)
             {
-                await Application.Current.MainPage.DisplayAlert("Connexion Failed", "Le mot de passe ou le nom est incorrect", "OK"); // Affiche une alerte en cas de connexion échouée
+                await Application.Current.MainPage.DisplayAlert("Connexion Failed", "Le mot de passe ou le nom est incorrect", "OK"); 
             }
         }
     }

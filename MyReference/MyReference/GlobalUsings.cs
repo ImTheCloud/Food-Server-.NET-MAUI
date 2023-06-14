@@ -15,9 +15,9 @@ global using System.Text.Json;
 
    
 
-public class Globals
+public class Globals 
 {
-
+    // variable dispo dans tout le programme
     public static List<Food> MyStaticList = new List<Food>();
     // internal static Queue<string> SerialBuffer = new Queue<string>();
 

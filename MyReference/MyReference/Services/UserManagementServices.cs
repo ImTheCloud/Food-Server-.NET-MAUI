@@ -8,7 +8,7 @@ namespace MyReference.Services
 
     public class CreateUserTables
     {
-        // Classe CreateUserTables
+
 
         public CreateUserTables()
         {

@@ -5,8 +5,6 @@ namespace MyReference.ViewModel
     [QueryProperty(nameof(Code), "Databc")]
     public partial class AddProductViewModel : BaseViewModel
     {
-        [ObservableProperty]
-        string code;
 
         public AddProductViewModel()
         {
@@ -14,6 +12,8 @@ namespace MyReference.ViewModel
         }
 
         public ICommand SaveItem => new Command(AddFood);
+        [ObservableProperty] // fait le get et le set a notre place, c'est utile pour lorsque on veux recuperer une valeur d'un entry
+        string code;
 
         [ObservableProperty]
         public string name;

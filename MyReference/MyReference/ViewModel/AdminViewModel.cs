@@ -4,20 +4,20 @@ namespace MyReference.ViewModel
 {
     public partial class AdminViewModel : BaseViewModel
     {
-        public ObservableCollection<User> myUserList { get; set; } = new(); // Liste observable des utilisateurs
+        public ObservableCollection<User> myUserList { get; set; } = new(); 
 
-        public ICommand DeleteCommand => new Command<User>(DeleteUser); // Commande de suppression d'un utilisateur
-        public ICommand ToAdminUserCommand => new Command<User>(UpdateUser); // Commande pour mettre à jour les autorisations d'un utilisateur
-        public ICommand AddUserCommand => new Command(AddUser); // Commande pour ajouter un utilisateur
-        public ICommand OnResearchCommand => new Command(SearchingData); // Commande pour effectuer une recherche de données
+        public ICommand DeleteCommand => new Command<User>(DeleteUser); 
+        public ICommand ToAdminUserCommand => new Command<User>(UpdateUser); 
+        public ICommand AddUserCommand => new Command(AddUser); 
+        public ICommand OnResearchCommand => new Command(SearchingData); 
 
-        UserManagementServices MyDBServices; // Instance de la classe UserManagementServices
+        UserManagementServices MyDBServices;
 
         public AdminViewModel(UserManagementServices myDBServices)
         {
-            loadFromDB(); // Charge les données depuis la base de données
-            this.MyDBServices = myDBServices; // Initialise l'instance de UserManagementServices
-            MyDBServices.ConfigTools(); // Configure les outils de la base de données
+            loadFromDB(); 
+            this.MyDBServices = myDBServices; 
+            MyDBServices.ConfigTools(); // methode qui preovienne d'autre class faut ca !!! // ligne 14 AUSSI !!!!!!!!!!!!!!!!!!!!!!!
         }
 
         [ObservableProperty]

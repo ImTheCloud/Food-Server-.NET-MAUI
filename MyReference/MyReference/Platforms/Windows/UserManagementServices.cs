@@ -4,6 +4,8 @@ namespace MyReference.Services;
 
 public partial class UserManagementServices
 {
+    // methode global
+
     internal OleDbConnection Connexion = new();
     internal OleDbDataAdapter Users_Adapter = new();
 

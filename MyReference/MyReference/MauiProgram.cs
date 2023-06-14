@@ -13,11 +13,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-        builder.Services.AddSingleton<ShowProductViewModel>();
+        builder.Services.AddSingleton<ShowProductViewModel>(); // crée une seul instance
         builder.Services.AddSingleton<ShowProductPage>();
 
 
-        builder.Services.AddTransient<AddProductViewModel>();
+        builder.Services.AddTransient<AddProductViewModel>(); // crée plusieur instance
         builder.Services.AddTransient<AddProductPage>();
 
         builder.Services.AddTransient<InventoryViewModel>();
@@ -27,8 +27,9 @@ public static class MauiProgram
         builder.Services.AddTransient<AdminPage>();
 
 
-        builder.Services.AddSingleton<UserViewModel>();
+        builder.Services.AddSingleton<UserViewModel>(); // car en accede la premiere fois
         builder.Services.AddSingleton<UserPage>();
+
         builder.Services.AddTransient<CreateUserTables>();
         builder.Services.AddTransient<UserManagementServices>();
 

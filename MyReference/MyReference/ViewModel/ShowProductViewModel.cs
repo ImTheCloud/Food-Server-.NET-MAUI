@@ -80,7 +80,7 @@ namespace MyReference.ViewModel
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Administrateur", "Seul les Administrateurs ont accès à cette session", "OK"); // Affiche une alerte si l'utilisateur n'est pas administrateur
+                await Application.Current.MainPage.DisplayAlert("Administrateur", "Seul les Administrateurs ont accès à cette session", "OK"); 
             }
         }
 
